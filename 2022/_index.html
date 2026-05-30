@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta情報 -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="../img/ogp.jpg" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bvz6sgg.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- 過去のCSS -->
+    <link href="../css-archive/common.css" rel="stylesheet">
+    <link href="../css-archive/style.css" rel="stylesheet">
+    <link href="../css-archive/responsive.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="../css/style.css?ver=202406110353">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <title>東大week</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function header(rootDir) {
+            $.ajax({
+                url: rootDir + "include/header.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: 'html',
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                }
+            });
+        }
+
+        function footer(rootDir) {
+            $.ajax({
+                url: rootDir + "include/footer.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: 'html',
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                }
+            });
+        }
+    </script>
+    <style>
+       section.program h2.isActive:after{
+           content: none;
+       }
+        section.program div.sec_wrapper{
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body id="fixedBox">
+
+    <!----------------top------------------>
+    <a name="top" id="top"></a>
+
+    <div class="sec_wrapper">
+        <!--SP nav -->
+
+        <script>
+            $(function () {
+                $(".nav_sp dt").on("click", function () {
+                    $('.nav_sp dt').toggleClass('active');
+                    $(this).next().slideToggle();
+                });
+            });
+        </script>
+
+        <script>
+            $(function () {
+                $(".nav_sp a").on("click", function () {
+                    $('.nav_sp dt').toggleClass('active');
+                    $('.nav_sp dt').next().slideToggle();
+                });
+            });
+        </script>
+
+
+        <nav class="glbnav">
+
+            <!----------------glbnav------------------>
+
+            <ul class="nav_pc">
+                <li class="nav00 main_nav"><a href="../">HOME</a></li>
+                <li class="nav00 main_nav"><a href="../index.html#overview">開催概要</a></li>
+                <li class="nav01 main_nav"><a href="../index.html#program">プログラム</a></li>
+                <li class="nav02 main_nav"><a href="../index.html#venue">会場</a></li>
+                <li class="nav03 main_nav"><a href="../index.html#faq">よくある質問</a></li>
+                <li class="nav04 main_nav"><a href="./">過去の開催</a></li>
+                <li class="nav05 main_nav"><a href="../index.html#contact">お問合せ</a></li>
+
+            </ul>
+
+            <dl class="nav_sp">
+                <dt><span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </dt>
+                <dd>
+                    <ul class="ul_sp">
+                        <li class="nav00 main_nav"><a href="../">HOME</a></li>
+                        <li class="nav00 main_nav"><a href="../index.html#overview">開催概要</a></li>
+                        <li class="nav01 main_nav"><a href="../index.html#program">プログラム</a></li>
+                        <li class="nav02 main_nav"><a href="../index.html#venue">会場</a></li>
+                        <li class="nav03 main_nav"><a href="../index.html#faq">よくある質問</a></li>
+                        <li class="nav04 main_nav"><a href="./">過去の開催</a></li>
+                        <li class="nav05 main_nav"><a href="../index.html#contact">お問合せ</a></li>
+                        <li class="nav10 main_nav"><a href="../term.html">個人情報・規約</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </nav>
+
+
+    </div>
+
+
+    <header class="kaso">
+
+        <!----------------main img------------------>
+
+        <div class="sec_wrapper">
+
+            <img src="../images/fig/kaso/fig_left.svg" alt="" class="fig_left" />
+
+
+
+
+            <h1>東大Week<br/ class="dpcnone580" /><span>@Marunouchi 2022</span></h1>
+
+            <div class="youtube">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m8Lp-sGVIog" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <img src="../images/fig/kaso/fig_right.svg" alt="" class="fig_right" />
+
+
+
+        </div>
+
+    </header>
+
+    <div class="clearfix"></div>
+
+
+    <!----------------timetable------------------>
+    <a name="timetable" id="timetable"></a>
+
+    <section class="timetable">
+        <div class="sec_wrapper">
+            <p class="exp">＊ 2022年度の開催は終了いたしました。 ご参加ありがとうございました。</p>
+
+            <h2>TIME TABLE<br class="dpcnone" /><span>タイムテーブル</span></h2>
+
+
+            <h3>12.19 <span>Mon</span></h3>
+            <!--  day 01 01-->
+            <ul class="day01">
+                <li>
+                    <dl>
+                        <dt></dt>
+                        <dd>
+                            <h4>@Inspired.Lab</h4>
+                            <div class="wrap_line"></div>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>18:30<br />
+                            <span>|</span><br />
+                            19:15</dt>
+                        <dd>
+                            <div class="wrap_line">
+                                <h5>【オープニングトーク①】『“本丸エリア”の将来像とは』</h5>
+                                <p>東京大学の主要拠点である本郷エリアから三菱地所がまちづくりを進めてきた丸の内エリアまでを「本丸エリア」と設定しました。<br />
+                                    『本丸エリアイノベーションオーバル』について、それぞれのエリアの歴史も紐解きながら、これからのまちづくりの在り方・社会の在り方を様々な観点から語ります。</p>
+
+                                <ul class="speaker">
+                                    <li>
+                                        <dl>
+                                            <dt><img src="./images/speaker/p01_01.png" alt="浅見 泰司" /></dt>
+                                            <dd>
+                                                <h5>浅見 泰司</h5>
+                                                <h6>東京大学 副学長<br />大学総合教育研究センター長<br />大学院工学系研究科 教授</h6>
+                                                <div class="dspnone">
+                                                    <div class="btn_more b01_01">詳しく見る</div>
+                                                </div>
+                                            </dd>
+                                            <p class="m01_01 p_m_none">
+                                                1987年ペンシルヴァニア大学大学院修了（Ph.D.）。東京大学工学部助手、講師、助教授、空間情報科学研究センター教授を経て、2012年より工学系研究科教授、2020年より副学長、2021年より大学総合教育研究センター長。専門は、都市計画、不動産分析、空間情報解析。地理情報システム学会や日本計画行政学会の会長などを歴任。
+                                            </p>
+
+                                            <dd class="dd_btn_more dpcnone">
+                                                <div class="btn_more b01_01_sp">詳しく見る</div>
+                                                <p class="m01_01_sp p_m_none">
+                                                    1987年ペンシルヴァニア大学大学院修了（Ph.D.）。東京大学工学部助手、講師、助教授、空間情報科学研究センター教授を経て、2012年より工学系研究科教授、2020年より副学長、2021年より大学総合教育研究センター長。専門は、都市計画、不動産分析、空間情報解析。地理情報システム学会や日本計画行政学会の会長などを歴任。
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+
+                                    <li>
+                                        <dl>
+                                            <dt><img src="./images/speaker/p03_03.png" alt="横張 真" /></dt>
+                                            <dd>
+                                                <h5>横張 真</h5>
+                                                <h6>東京大学 大学院工学系研究科 <br />都市工学専攻 教授</h6>
+                                                <div class="dspnone">
+                                                    <div class="btn_more b01_05">詳しく見る</div>
+
+                                                </div>
+                                            </dd>
+                                            <p class="m01_05 p_m_none">
+                                                東京生まれ。都市計画学（緑地環境計画学）が専門。学生時代に丸ビルや二重橋ビルでアルバイトを経験、現在も大丸有のまちづくりにかかわる。日本都市計画学会会長、日本造園学会会長、東京オリンピック・パラリンピック組織委員会委員等を歴任。現在、学内ではキャンパス計画室室長、学外では国土交通省都市計画基本問題小委員会臨時委員等をつとめる。
+                                            </p>
+                                            <dd class="dd_btn_more dpcnone">
+                                                <div class="btn_more b01_05_sp">詳しく見る</div>
+                                                <p class="m01_05_sp p_m_none">
+                                                    東京生まれ。都市計画学（緑地環境計画学）が専門。学生時代に丸ビルや二重橋ビルでアルバイトを経験、現在も大丸有のまちづくりにかかわる。日本都市計画学会会長、日本造園学会会長、東京オリンピック・パラリンピック組織委員会委員等を歴任。現在、学内ではキャンパス計画室室長、学外では国土交通省都市計画基本問題小委員会臨時委員等をつとめる。
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+
+                <!--  day 01 02 -->
+                <li>
+                    <dl>
+                        <dt>19:20<br />
+                            <span>|</span><br />
+                            20:00</dt>
+                        <dd>
+                            <div class="wrap_line">
+                                <h5>【オープニングトーク②】よりよい未来の創造へ、産学連携による新たな産業の核を創出するために</h5>
+                                <p>オープニングイベントとして、TomyK
+                                    Ltd.代表の鎌田富久氏をモデレーターとして迎え、東京大学藤井総長と三菱地所吉田社長が、トークサロンを行います。東大発スタートアップの先駆け的存在である鎌田代表が、知を極め、人を育む東大の藤井総長と、まちとしてスタートアップエコシステムの構築を目指す吉田社長に、イノベーション創出のカギを問います。
+                                </p>
+
+                                <ul class="speaker">
+                                    <li>
+                                        <dl>
+                                            <dt><img src="./images/speaker/p01_02.png" alt="藤井 輝夫" /></dt>
+                                            <dd>
+                                                <h5>藤井 輝夫</h5>
+                                                <h6>東京大学 総長</h6>
+                                                <div class="dspnone">
+                                                    <div class="btn_more b01_02">詳しく見る</div>
+
+                                                </div>
+                                            </dd>
+                                            <p class="m01_02 p_m_none">
+                                                1993年東京大学大学院工学系研究科博士課程修了・博士（工学）、同生産技術研究所や理化学研究所での勤務を経て、2007年東京大学生産技術研究所教授、2015年同生産技術研究所長、2018年同大学執行役・副学長、2019年同理事・副学長（財務、社会連携・産学官協創担当）、2021年より同総長に就任。専門分野は応用マイクロ流体システム、海中工学。
+                                            </p>
+
+                                            <dd class="dd_btn_more dpcnone">
+                                                <div class="btn_more b01_02_sp">詳しく見る</div>
+                                                <p class="m01_02_sp p_m_none">
+                                                    1993年東京大学大学院工学系研究科博士課程修了・博士（工学）、同生産技術研究所や理化学研究所での勤務を経て、2007年東京大学生産技術研究所教授、2015年同生産技術研究所長、2018年同大学執行役・副学長、2019年同理事・副学長（財務、社会連携・産学官協創担当）、2021年より同総長に就任。専門分野は応用マイクロ流体システム、海中工学。
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+
+                                    <li>
+                                        <dl>
+                                            <dt><img src="./images/speaker/p01_03.png" alt="鎌田 富久" /></dt>
+                                            <dd>
+                                                <h5>鎌田 富久</h5>
+                                                <h6>TomyK Ltd. 代表</h6>
+                                                <div class="dspnone">
+                                                    <div class="btn_more b01_03">詳しく見る</div>
+
+                                                </div>
+                                            </dd>
+                                            <p class="m01_03 p_m_none">
+                                                東京大学大学院理学系研究科情報科学博士課程修了。理学博士。在学中にベンチャー企業ACCESS社を設立し、世界初の携帯電話向けウェブブラウザを開発するなどモバイルインターネットの技術革新を牽引。2001年に上場。2012年にTomyKを設立し、DeepTech
+                                                Startupを多数支援。東京大学大学院(情報理工)特任教授。医療AIのLPIXEL代表取締役も務める。</p>
+                                            <dd class="dd_btn_more dpcnone">
+                                                <div class="btn_more b01_03_sp">詳しく見る</div>
+                                                <p class="m01_03_sp p_m_none">
+                                                    東京大学大学院理学系研究科情報科学博士課程修了。理学博士。在学中にベンチャー企業ACCESS社を設立し、世界初の携帯電話向けウェブブラウザを開発するなどモバイルインターネットの技術革新を牽引。2001年に上場。2012年にTomyKを設立し、DeepTech
+                                                    Startupを多数支援。東京大学大学院(情報理工)特任教授。医療AIのLPIXEL代表取締役も務める。</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+
+                                    <li>
+                                        <dl>
+                                            <dt><img src="./images/speaker/p01_04.png" alt="吉田淳一" /></dt>
+                                            <dd>
+                                                <h5>吉田 淳一</h5>
+                                                <h6>三菱地所 執行役社長</h6>
+                                                <div class="dspnone">
+                                                    <div class="btn_more b01_04">詳しく見る</div>
+
+                                                </div>
+                                            </dd>
+                                            <p class="m01_04 p_m_none">
+                                                1982年に東京大学法学部卒業後、三菱地所入社。2007年に人事企画部長、12年に執行役員ビルアセット業務部長を経て14年に常務執行役員、16年に取締役を兼任。17年より執行役社長（現職）を務める
+                                            </p>
+
+                                            <dd class="dd_btn_more dpcnone">
+                                                <div class="btn_more b01_04_sp">詳しく見る</div>
+                                                <p class="m01_04_sp p_m_none">
+                                                    1982年に東京大学法学部卒業後、三菱地所入社。2007年に人事企画部長、12年に執行役員ビルアセット業務部長を経て14年に常務執行役員、16年に取締役を兼任。17年より執行役社長（現職）を務める
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <!--
+		<li>
+		<dl>
+			<dt></dt>
+			<dd>
+			<div class="wrap_line">
+				<div class="btn_ticket"><a href="https://todaiweek-day1-inspired.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>
+		-->
+            </ul>
+
+            <!-- end day01 PC-->
+
+
+            <!--  day 02 01 -->
+            <h3>12.20 <span>Tue</span></h3>
+
+            <!-- Start day02 PC-->
+            <div class="day02_pc">
+                <ul class="day23">
+                    <li class="head_li">
+                        <dl>
+                            <dt></dt>
+                            <dd class="v01">
+                                <h4>@有楽町 micro FOOD & IDEA MARKET</h4>
+
+                                <div class="wrap_line"></div>
+                            </dd>
+
+                            <dd class="v02">
+                                <h4>@Have a Nice TOKYO!</h4>
+                                <div class="wrap_line"></div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>18:30<br />
+                                <span>|</span><br />
+                                19:10</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>人間社会と自然環境の間に生まれる価値</h5>
+                                    <p>人と自然の関わり合いの中で生まれる価値について、心理学等の手法により抽出・可視化した研究を紹介し、その価値との向き合い方を参加者の皆さんと議論します。</p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_01.png" alt="杉野 弘明" /></dt>
+                                        <dd>
+                                            <h5>杉野 弘明</h5>
+                                            <h6>東京大学 大学院農学生命科学研究科<br />助教</h6>
+                                            <div class="btn_more b02_01">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m02_01 p_m_none">
+                                            東京大学大学院農学生命科学研究科・助教。専門は、環境心理学・人間環境学。農村や漁村のような森や山、川や海といった自然環境と人間の住む領域の境界にある地域を主な研究フィールドとして、双方の持続可能性を議論・実現するため、人々を取り囲む自然を含めた環境が有する潜在的で指標化の難しい価値の抽出と可視化について、心理学や工学、農学的手法を学際的に用いながら取り組んでいる。
+                                        </p>
+                                    </dl>
+                                </div>
+                            </dd>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>人生100年時代におけるコミュニティのリ・デザイン　～健康長寿と幸福長寿を目指す～</h5>
+                                    <p>わが国において健康長寿と同時に「幸福長寿」も実現しなければなりません。新概念「フレイル」により、健康増進・介護予防等の予防施策も底上げし、生きがいを感じることのできる総合まちづくりを推進したい。そのための総合知について考えます。
+                                    </p>
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_02.png" alt="飯島 勝矢" /></dt>
+                                        <dd>
+                                            <h5>飯島 勝矢</h5>
+                                            <h6>東京大学 高齢社会総合研究機構 機構長<br />未来ビジョン研究センター 教授</h6>
+                                            <div class="btn_more b02_02">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m02_02 p_m_none">東京大学大学院医学系研究科加齢医学講座
+                                            助手・講師、米国スタンフォード大学医学部研究員を経て、2020年より東京大学高齢社会総合研究機構機構長及び未来ビジョン研究センター教授。内閣府「一億総活躍国民会議」有識者民間議員、厚生労働省「高齢者の保健事業と介護予防の一体的な実施に関する有識者会議」構成員、日本学術会議「老化分科会」「高齢者の健康分科会」構成員
+                                        </p>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <!--  day 02 02 PC-->
+                    <li>
+                        <dl>
+                            <dt>19:20<br />
+                                <span>|</span><br />
+                                20:00</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>記憶の神秘を探る</h5>
+                                    <p>脳は、過去の経験を振り返り、学習する能力を持ち合わせています。この仕組みの謎に現在どのように迫っているのか、研究の最前線を紹介します。</p>
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_03.png" alt="尾藤 晴彦" /></dt>
+                                        <dd>
+                                            <h5>尾藤 晴彦</h5>
+                                            <h6>東京大学 大学院医学系研究科<br />神経生化学分野 教授</h6>
+                                            <div class="btn_more b02_03">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m02_03 p_m_none">
+                                            脳は外界からの情報を、「役立つ」情報に偏って貯蔵するとともに、「必要に応じて」読み出せる機構を進化の過程で獲得した。このメカニズムの解明に学生時代から一貫として取り組んでいます。1990年東大医卒（医師免許取得）、1993年東大院医修了（博士（医学）授与）。1993年スタンフォード大常勤研究員、1997年京大医助手、1998年同講師、2003年東大医助教授、2007年同准教授、2013年同教授、2020年同脳神経医学専攻長。
+                                        </p>
+                                    </dl>
+                                </div>
+                            </dd>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>身体の自在化からこころの自在化へ</h5>
+                                    <p>現在我々はSociety4.0とも位置付けられる情報化社会に生きています。そして情報化とは脱物質化・脱身体化とも換言できます。情報化により様々なサービスやビジネスが生まれました。
+                                    </p>
+                                    <p class="m_ex">
+                                        今回のコロナ禍であっても、大学や企業において講義や会議を辛うじて行うことができたのも情報化の貢献といえます。しかしながら、現状の遠隔会議システムをはじめとする情報ツールを介したコミュニケーションにおける身体性の喪失により、諸問題が顕在化しつつあります。テレイグジスタンス技術やアバター技術、触覚技術などは情報化社会に身体性を取り戻す、いわばポスト身体社会を目指した試みともとらえることができます。<br />
+                                        本セッションでは、ポスト身体社会における多様な身体性を扱うための研究「自在化身体」について紹介するとともに、Society5.0における「こころ」と「からだ」の新たな関係を展望します。
+                                    </p>
+                                    <div class="b_ex"></div>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_04.png" alt="稲見 昌彦" /></dt>
+                                        <dd>
+                                            <h5>稲見 昌彦</h5>
+                                            <h6>東京大学 総長特任補佐<br />先端科学技術研究センター 身体情報学分野 教授</h6>
+                                            <div class="btn_more b02_04">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m02_04 p_m_none">東京大学 総長特任補佐・先端科学技術研究センター 身体情報学分野教授。博士（工学）。<br />
+                                            JST ERATO 稲見自在化身体プロジェクト 研究総括。<br />
+                                            自在化技術、人間拡張工学、エンタテインメント工学に興味を持つ。<br />
+                                            米TIME誌Coolest Invention of the Year、文部科学大臣表彰若手科学者賞などを受賞。<br />
+                                            超人スポーツ協会代表理事、情報処理学会理事、日本バーチャルリアリティ学会理事、日本学術会議連携会員等を兼務。<br />
+                                            著書に『スーパーヒューマン誕生!人間はSFを超える』（NHK出版新書）、『自在化身体論』（NTS）他。
+                                        </p>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <!--		<li>
+		<dl>
+			<dt></dt>
+			<dd class="v01">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day2-yurakuchomicro.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+			
+			<dd class="v02">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day2-hant.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>-->
+                </ul>
+
+            </div>
+            <!-- end day02 PC -->
+
+
+            <!-- Start day02 SP-->
+            <div class="day02_sp">
+                <ul class="day23">
+                    <li class="head_li">
+                        <dl>
+                            <dt></dt>
+                            <dd class="v01">
+                                <h4>@有楽町 micro FOOD & IDEA MARKET</h4>
+                                <div class="wrap_line"></div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>18:30<br />
+                                <span>|</span><br />
+                                19:10</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>人間社会と自然環境の間に生まれる価値</h5>
+                                    <p>人と自然の関わり合いの中で生まれる価値について、心理学等の手法により抽出・可視化した研究を紹介し、その価値との向き合い方を参加者の皆さんと議論します。</p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_01.png" alt="杉野 弘明" /></dt>
+                                        <dd>
+                                            <h5>杉野 弘明</h5>
+                                            <h6>東京大学 大学院農学生命科学研究科<br />助教</h6>
+                                        </dd>
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b02_01">詳しく見る</div>
+                                            <p class="m02_01 p_m_none">
+                                                東京大学大学院農学生命科学研究科・助教。専門は、環境心理学・人間環境学。農村や漁村のような森や山、川や海といった自然環境と人間の住む領域の境界にある地域を主な研究フィールドとして、双方の持続可能性を議論・実現するため、人々を取り囲む自然を含めた環境が有する潜在的で指標化の難しい価値の抽出と可視化について、心理学や工学、農学的手法を学際的に用いながら取り組んでいる。
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt>19:20<br />
+                                <span>|</span><br />
+                                20:00</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>記憶の神秘を探る</h5>
+                                    <p>脳は、過去の経験を振り返り、学習する能力を持ち合わせています。この仕組みの謎に現在どのように迫っているのか、研究の最前線を紹介します。</p>
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_03.png" alt="尾藤 晴彦" /></dt>
+                                        <dd>
+                                            <h5>尾藤 晴彦</h5>
+                                            <h6>東京大学 大学院医学系研究科<br />神経生化学分野 教授</h6>
+                                        </dd>
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b02_03">詳しく見る</div>
+                                            <p class="m02_03 p_m_none">
+                                                脳は外界からの情報を、「役立つ」情報に偏って貯蔵するとともに、「必要に応じて」読み出せる機構を進化の過程で獲得した。このメカニズムの解明に学生時代から一貫として取り組んでいます。1990年東大医卒（医師免許取得）、1993年東大院医修了（博士（医学）授与）。1993年スタンフォード大常勤研究員、1997年京大医助手、1998年同講師、2003年東大医助教授、2007年同准教授、2013年同教授、2020年同脳神経医学専攻長。
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <!--
+				<li>
+		<dl>
+			<dt></dt>
+			<dd class="v01">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day2-yurakuchomicro.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>
+		-->
+                    <!-- end day02 @有楽町 micro FOOD & IDEA MARKET SP-->
+
+                    <li class="head_li">
+                        <dl>
+                            <dt></dt>
+                            <dd class="v02">
+                                <h4>@Have a Nice TOKYO!</h4>
+                                <div class="wrap_line"></div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>18:30<br />
+                                <span>|</span><br />
+                                19:10</dt>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>人生100年時代におけるコミュニティのリ・デザイン　～健康長寿と幸福長寿を目指す～</h5>
+                                    <p>わが国において健康長寿と同時に「幸福長寿」も実現しなければなりません。新概念「フレイル」により、健康増進・介護予防等の予防施策も底上げし、生きがいを感じることのできる総合まちづくりを推進したい。そのための総合知について考えます。
+                                    </p>
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_02.png" alt="飯島 勝矢" /></dt>
+                                        <dd>
+                                            <h5>飯島 勝矢</h5>
+                                            <h6>東京大学 高齢社会総合研究機構 機構長<br />未来ビジョン研究センター 教授</h6>
+                                        </dd>
+
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b02_02">詳しく見る</div>
+                                            <p class="m02_02 p_m_none">東京大学大学院医学系研究科加齢医学講座
+                                                助手・講師、米国スタンフォード大学医学部研究員を経て、2020年より東京大学高齢社会総合研究機構機構長及び未来ビジョン研究センター教授。内閣府「一億総活躍国民会議」有識者民間議員、厚生労働省「高齢者の保健事業と介護予防の一体的な実施に関する有識者会議」構成員、日本学術会議「老化分科会」「高齢者の健康分科会」構成員
+                                            </p>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt>19:20<br />
+                                <span>|</span><br />
+                                20:00</dt>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>身体の自在化からこころの自在化へ</h5>
+                                    <p>現在我々はSociety4.0とも位置付けられる情報化社会に生きています。そして情報化とは脱物質化・脱身体化とも換言できます。情報化により様々なサービスやビジネスが生まれました。
+                                    </p>
+                                    <p class="m_ex">
+                                        今回のコロナ禍であっても、大学や企業において講義や会議を辛うじて行うことができたのも情報化の貢献といえます。しかしながら、現状の遠隔会議システムをはじめとする情報ツールを介したコミュニケーションにおける身体性の喪失により、諸問題が顕在化しつつあります。テレイグジスタンス技術やアバター技術、触覚技術などは情報化社会に身体性を取り戻す、いわばポスト身体社会を目指した試みともとらえることができます。<br />
+                                        本セッションでは、ポスト身体社会における多様な身体性を扱うための研究「自在化身体」について紹介するとともに、Society5.0における「こころ」と「からだ」の新たな関係を展望します。
+                                    </p>
+                                    <div class="b_ex"></div>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p02_04.png" alt="稲見 昌彦" /></dt>
+                                        <dd>
+                                            <h5>稲見 昌彦</h5>
+                                            <h6>東京大学 総長特任補佐<br />
+                                                先端科学技術研究センター 身体情報学分野 教授</h6>
+                                        </dd>
+
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b02_04">詳しく見る</div>
+                                            <p class="m02_04 p_m_none">東京大学 総長特任補佐・先端科学技術研究センター 身体情報学分野教授。博士（工学）。
+                                                JST ERATO 稲見自在化身体プロジェクト 研究総括。<br />
+                                                自在化技術、人間拡張工学、エンタテインメント工学に興味を持つ。<br />
+                                                米TIME誌Coolest Invention of the Year、文部科学大臣表彰若手科学者賞などを受賞。<br />
+                                                超人スポーツ協会代表理事、情報処理学会理事、日本バーチャルリアリティ学会理事、日本学術会議連携会員等を兼務。<br />
+                                                著書に『スーパーヒューマン誕生!人間はSFを超える』（NHK出版新書）、『自在化身体論』（NTS）他。</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <!--
+		<li>
+		<dl>
+			<dt></dt>
+			<dd class="v02">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day2-hant.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>
+		-->
+                    <!-- end day02 @Have a Nice TOKYO! SP-->
+
+
+                </ul>
+
+            </div>
+            <!-- end day02 SP -->
+
+
+            <!--  day 03 01 -->
+            <h3>12.21 <span>Wed</span></h3>
+
+            <!--  Start day 03  PC-->
+            <div class="day03_pc">
+                <ul class="day23">
+                    <li class="head_li">
+                        <dl>
+                            <dt></dt>
+                            <dd class="v01">
+                                <h4>@有楽町 micro FOOD & IDEA MARKET</h4>
+
+                                <div class="wrap_line"></div>
+                            </dd>
+
+                            <dd class="v02">
+                                <h4>@Have a Nice TOKYO!</h4>
+                                <div class="wrap_line"></div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>18:30<br />
+                                <span>|</span><br />
+                                19:10</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>科学で社会をアップデート：制度設計科学の理論と実践</h5>
+                                    <p>近年、マーケットデザイン（制度設計の科学）という分野が経済学で大発展しています。組織内の人事配属や待機児童問題などを例に、この制度設計の科学の研究と社会実装の最前線をご紹介します。
+                                    </p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_01.png" alt="小島 武仁" /></dt>
+                                        <dd>
+                                            <h5>小島 武仁</h5>
+                                            <h6>東京大学 大学院経済学研究科 教授</h6>
+                                            <div class="btn_more b03_01">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m03_01 p_m_none">
+                                            経済学者。1979年生まれ。2003年東京大学卒業（経済学部総代）、2008年ハーバード大学経済学部博士。イェール大学（博士研究員）、スタンフォード大学（助教授、准教授、教授）などを経て2020年より東京大学経済学部教授。<br />
+                                            専門分野は人と人や人とモノ・サービスを適材適所に引き合わせる方法を考える「マッチング理論」と、それを応用して社会制度の設計や実装につなげる「マーケットデザイン」。日本の研修医マッチング制度や待機児童問題を改善する具体的な方法の発明などで知られる。多くのトップ国際学術誌に論文を発表し、受賞多数。数々の指標で最も生産性の高い日本人経済学者とされている。また、大学外との連携も積極的に行っている。
+                                        </p>
+
+                                    </dl>
+                                </div>
+                            </dd>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>柔らかいモビリティによる街の中での価値の移動</h5>
+                                    <p>空気を用いた柔らかいモビリティpoimoの紹介と、スマートな価値の移動により人が生き生きと暮らせる社会・街づくりのヒントを考えます。</p>
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_02.png" alt="川原 圭博" /></dt>
+                                        <dd>
+                                            <h5>川原 圭博</h5>
+                                            <h6>東京大学 大学院工学系研究科 教授<br />インクルーシブ工学連携研究機構 機構長</h6>
+                                            <div class="btn_more b03_02">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m03_02 p_m_none">2005年 東京大学大学院情報理工学系研究科 博士課程修了。博士（情報理工学）。2019年より工学系研究科
+                                            教授。2019年インクルーシブ工学連携研究機構
+                                            機構長。IoT、デジタルファブリケーション、無線給電の研究に従事。研究成果の社会実装とイノベーション創出に取り組む。</p>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <!--  day 03 02 PC -->
+                    <li>
+                        <dl>
+                            <dt>19:20<br />
+                                <span>|</span><br />
+                                20:00</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>Healthy Cities ～空間情報科学で健康な街へ～</h5>
+                                    <p>近年、「健康」がまちづくりのキーワードになってきています。<br />
+                                        人々の健康を促進するまちづくりを目指した空間情報科学のアプローチをご紹介します。</p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_05.png" alt="山田 育穂" /></dt>
+                                        <dd>
+                                            <h5>山田 育穂</h5>
+                                            <h6>東京大学 空間情報科学研究センター 教授</h6>
+                                            <div class="btn_more b03_03">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m03_03 p_m_none">
+                                            東京大学工学部卒業、同大学工学系研究科修士課程修了、ニューヨーク州立大学バッファロー校博士課程修了（Pd.D.取得）。インディアナ大学-パデュー大学インディアナポリス校・ユタ大学助教授、東京大学准教授、中央大学教授を経て、2019年9月より東京大学空間情報科学研究センター教授。専門は空間情報科学、都市解析、健康地理学。
+                                        </p>
+                                    </dl>
+                                </div>
+                            </dd>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>ストレスセンシングとリラックス誘導クッション</h5>
+                                    <p>ストレスはどうやって測るのか？その先のリラックスへ辿り着くには？<br />
+                                        ストレスをセンシングする仕組みと日常的に計測する座布団型センサをご紹介します。さらに、短い休憩時間でも効果的にストレス状態からリラックス状態に移行できるクッション型デバイスを紹介し、体験いただきます。
+                                    </p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_04.png" alt="割澤 伸一" /></dt>
+                                        <dd>
+                                            <h5>割澤 伸一</h5>
+                                            <h6>東京大学 大学院新領域創成科学研究科 教授</h6>
+                                            <div class="btn_more b03_04">詳しく見る</div>
+
+                                        </dd>
+                                        <p class="m03_04 p_m_none">1994年東京大学大学院工学系研究科産業機械工学専攻修了（博士≪工学≫）。
+                                            1994年東京工業大学精密工学研究所助手、2000年東京大学大学院工学系研究科講師、2003年同准教授、2012年同大学大学院新領域創成科学研究科准教授、2015年同教授。心と体の健康を増進するためのセンシング技術、介入技術の研究を行う。
+                                        </p>
+
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <!--
+		<li>
+		<dl>
+			<dt></dt>
+			<dd class="v01">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day3-yurakuchomicro.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+			
+			<dd class="v02">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day3-hant.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>
+		-->
+                </ul>
+
+            </div>
+            <!-- end day 03 PC -->
+
+            <!--  Start day 03  SP-->
+            <div class="day03_sp">
+                <ul class="day23">
+                    <li class="head_li">
+                        <dl>
+                            <dt></dt>
+                            <dd class="v01">
+                                <h4>@有楽町 micro FOOD & IDEA MARKET</h4>
+
+                                <div class="wrap_line"></div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>18:30<br />
+                                <span>|</span><br />
+                                19:10</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>科学で社会をアップデート：制度設計科学の理論と実践</h5>
+                                    <p>近年、マーケットデザイン（制度設計の科学）という分野が経済学で大発展しています。組織内の人事配属や待機児童問題などを例に、この制度設計の科学の研究と社会実装の最前線をご紹介します。
+                                    </p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_01.png" alt="小島 武仁" /></dt>
+                                        <dd>
+                                            <h5>小島 武仁</h5>
+                                            <h6>東京大学 大学院経済学研究科 教授</h6>
+                                        </dd>
+
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b03_01">詳しく見る</div>
+                                            <p class="m03_01 p_m_none">
+                                                経済学者。1979年生まれ。2003年東京大学卒業（経済学部総代）、2008年ハーバード大学経済学部博士。イェール大学（博士研究員）、スタンフォード大学（助教授、准教授、教授）などを経て2020年より東京大学経済学部教授。<br />
+                                                専門分野は人と人や人とモノ・サービスを適材適所に引き合わせる方法を考える「マッチング理論」と、それを応用して社会制度の設計や実装につなげる「マーケットデザイン」。日本の研修医マッチング制度や待機児童問題を改善する具体的な方法の発明などで知られる。多くのトップ国際学術誌に論文を発表し、受賞多数。数々の指標で最も生産性の高い日本人経済学者とされている。また、大学外との連携も積極的に行っている。
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <!--  day 03 02 SP -->
+                    <li>
+                        <dl>
+                            <dt>19:20<br />
+                                <span>|</span><br />
+                                20:00</dt>
+                            <dd class="v01">
+                                <div class="wrap_line">
+                                    <h5>Healthy Cities ～空間情報科学で健康な街へ～</h5>
+                                    <p>近年、「健康」がまちづくりのキーワードになってきています。<br />
+                                        人々の健康を促進するまちづくりを目指した空間情報科学のアプローチをご紹介します。</p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_05.png" alt="山田 育穂" /></dt>
+                                        <dd>
+                                            <h5>山田 育穂</h5>
+                                            <h6>東京大学 空間情報科学研究センター 教授</h6>
+                                        </dd>
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b03_03">詳しく見る</div>
+                                            <p class="m03_03 p_m_none">
+                                                東京大学工学部卒業、同大学工学系研究科修士課程修了、ニューヨーク州立大学バッファロー校博士課程修了（Pd.D.取得）。インディアナ大学-パデュー大学インディアナポリス校・ユタ大学助教授、東京大学准教授、中央大学教授を経て、2019年9月より東京大学空間情報科学研究センター教授。専門は空間情報科学、都市解析、健康地理学。
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <!--
+		<li>
+		<dl>
+			<dt></dt>
+			<dd class="v01">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day3-yurakuchomicro.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>
+		-->
+
+                    <!-- end day03 @有楽町 micro FOOD & IDEA MARKET SP-->
+
+
+                    <li class="head_li">
+                        <dl>
+                            <dt></dt>
+                            <dd class="v02">
+                                <h4>@Have a Nice TOKYO!</h4>
+                                <div class="wrap_line"></div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>18:30<br />
+                                <span>|</span><br />
+                                19:10</dt>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>柔らかいモビリティによる街の中での価値の移動</h5>
+
+                                    <p>空気を用いた柔らかいモビリティpoimoの紹介と、スマートな価値の移動により人が生き生きと暮らせる社会・街づくりのヒントを考えます。</p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_02.png" alt="川原 圭博" /></dt>
+                                        <dd>
+                                            <h5>川原 圭博</h5>
+                                            <h6>東京大学 大学院工学系研究科 教授<br />インクルーシブ工学連携研究機構 機構長</h6>
+                                        </dd>
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b03_02">詳しく見る</div>
+                                            <p class="m03_02 p_m_none">2005年 東京大学大学院情報理工学系研究科
+                                                博士課程修了。博士（情報理工学）。2019年より工学系研究科 教授。2019年インクルーシブ工学連携研究機構
+                                                機構長。IoT、デジタルファブリケーション、無線給電の研究に従事。研究成果の社会実装とイノベーション創出に取り組む。</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <!--  day 03 02 SP -->
+                    <li>
+                        <dl>
+                            <dt>19:20<br />
+                                <span>|</span><br />
+                                20:00</dt>
+                            <dd class="v02">
+                                <div class="wrap_line">
+                                    <h5>ストレスセンシングとリラックス誘導クッション</h5>
+                                    <p>ストレスはどうやって測るのか？その先のリラックスへ辿り着くには？<br />
+                                        ストレスをセンシングする仕組みと日常的に計測する座布団型センサをご紹介します。さらに、短い休憩時間でも効果的にストレス状態からリラックス状態に移行できるクッション型デバイスを紹介し、体験いただきます。
+                                    </p>
+
+                                    <dl class="speaker">
+                                        <dt><img src="./images/speaker/p03_04.png" alt="割澤 伸一" /></dt>
+                                        <dd>
+                                            <h5>割澤 伸一</h5>
+                                            <h6>東京大学 大学院新領域創成科学研究科 教授</h6>
+                                        </dd>
+
+                                        <dd class="dd_btn_more dpcnone">
+                                            <div class="btn_more b03_04">詳しく見る</div>
+                                            <p class="m03_04 p_m_none">1994年東京大学大学院工学系研究科産業機械工学専攻修了（博士≪工学≫）。
+                                                1994年東京工業大学精密工学研究所助手、2000年東京大学大学院工学系研究科講師、2003年同准教授、2012年同大学大学院新領域創成科学研究科准教授、2015年同教授。心と体の健康を増進するためのセンシング技術、介入技術の研究を行う。
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <!--
+		<li>
+		<dl>
+			<dt></dt>
+			<dd class="v02">
+			<div class="wrap_line">
+			<div class="btn_ticket"><a href="https://todaiweek-day3-hant.peatix.com" target="_blank">チケット購入はこちら</a></div>
+			</div>
+			</dd>
+		</dl>
+		</li>
+		-->
+                    <!-- end day03 @Have a Nice TOKYO! SP-->
+
+
+                </ul>
+
+            </div>
+            <!-- end day 03 SP -->
+
+
+
+
+        </div>
+        <!-- end sec wrapper -->
+    </section>
+
+
+    <div class="page_top"><a href="#top"><img src="../images/common/page_top.svg" alt="page topへ" /></a></div>
+
+    <!----------------footer------------------>
+
+    <footer>
+        <div class="sec_wrapper">
+            <h1><a href="../"><img src="../images/common/logo_footer.svg" alt="東大Week＠Marunouchi"></a></h1>
+
+            <div class="footer_flex">
+                <ul class="footer_nav">
+                    <li class="main_nav"><a href="../index.html#overview">開催概要</a></li>
+                    <li class="main_nav"><a href="../index.html#program">プログラム</a></li>
+                    <li class="main_nav"><a href="../index.html#venue">会場</a></li>
+
+                </ul>
+                <ul class="footer_nav">
+                    <li class="main_nav"><a href="../index.html#news">お知らせ</a></li>
+                    <li class="main_nav"><a href="../index.html#faq">よくある質問</a></li>
+                    <li class="main_nav"><a href="../index.html#contact">お問合せ</a></li>
+                </ul>
+                <ul class="footer_nav">
+                    <li class="main_nav"><a href="../index.html#organizer">主催</a></li>
+                    <li class="main_nav"><a href="../index.html#partner">パートナー</a></li>
+                    <li class="main_nav"><a href="../term.html">個人情報・規約</a></li>
+                </ul>
+                <ul class="footer_nav">
+                    <li class="main_nav"><a href="./">過去の開催</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">&copy; 東大Week@Marunouchi実行委員会 All Right Reserved.</div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        $(function () {
+            $("div.b01_01").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_01").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_02").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_02").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_03").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_03").slideToggle();
+            });
+        });
+        $(function () {
+            $("div.b01_04").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_04").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_05").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_05").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_01_sp").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_01_sp").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_02_sp").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_02_sp").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_03_sp").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_03_sp").slideToggle();
+            });
+        });
+        $(function () {
+            $("div.b01_04_sp").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_04_sp").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b01_05_sp").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m01_05_sp").slideToggle();
+            });
+        });
+
+
+        $(function () {
+            $("div.b02_01").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m02_01").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b02_02").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m02_02").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b02_03").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m02_03").slideToggle();
+            });
+        });
+        $(function () {
+            $("div.b02_04").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m02_04").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b03_01").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m03_01").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b03_02").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m03_02").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b03_03").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m03_03").slideToggle();
+            });
+        });
+        $(function () {
+            $("div.b03_04").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m03_04").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.b_ex").on("click", function () {
+                $(this).toggleClass('active');
+                $("p.m_ex").slideToggle();
+            });
+        });
+
+        $(function () {
+            $("div.btn_faq").on("click", function () {
+                $(this).toggleClass('active');
+                $("div.faq_hid").slideToggle();
+            });
+        });
+
+
+        $(function () {
+            $('.v_potint01').mouseover(function (e) {
+                $('.map_icon01').addClass("map_over01");
+            })
+            $('.v_potint01').mouseout(function (e) {
+                $('.map_icon01').removeClass("map_over01");
+            })
+        });
+
+        $(function () {
+            $('.v_potint02').mouseover(function (e) {
+                $('.map_icon02').addClass("map_over02");
+            })
+            $('.v_potint02').mouseout(function (e) {
+                $('.map_icon02').removeClass("map_over02");
+            })
+        });
+
+        $(function () {
+            $('.v_potint03').mouseover(function (e) {
+                $('.map_icon03').addClass("map_over03");
+            })
+            $('.v_potint03').mouseout(function (e) {
+                $('.map_icon03').removeClass("map_over03");
+            })
+        });
+    </script>
+
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+        $(function () {
+            const header = $('nav.glbnav');
+
+            $('a[href^="#"]').on('click', function () {
+                const gap = header.outerHeight();
+                const speed = 500;
+                const href = $(this).attr("href");
+                const target = $(href == "#" || href == "" ? "html" : href);
+                const position = target.offset().top - gap;
+
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+
+        // ページトップ部
+        $(function () {
+            var topBtn = $('.page_top');
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 500) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 100);
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

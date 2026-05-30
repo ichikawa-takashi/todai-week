@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta情報 -->
+    <meta name="description" content="東大Week @ marunouchi 2025.7.30-7.31 知が躍動するまちへ" />
+    <!-- <meta name="keywords" content="" /> -->
+    <!-- ogp -->
+    <meta property="og:title" content="東大Week＠Marunouchi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todaiweek-marunouchi.jp" />
+    <meta property="og:image" content="../img/ogimage.png" />
+    <meta property="og:site_name" content="東大Week＠Marunouchi" />
+    <meta property="og:description" content="東大Week @ marunouchi 2025.7.30-7.31 知が躍動するまちへ" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bvz6sgg.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- 過去のCSS -->
+    <link href="../css-archive/common.css" rel="stylesheet">
+    <link href="../css-archive/style.css" rel="stylesheet">
+    <link href="../css-archive/responsive.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="../css/style.css?ver=202406110353">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <title>東大Week＠Marunouchi</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function header(rootDir) {
+            $.ajax({
+                url: rootDir + "include/header.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: 'html',
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                }
+            });
+        }
+
+        function footer(rootDir) {
+            $.ajax({
+                url: rootDir + "include/footer.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: 'html',
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                }
+            });
+        }
+    </script>
+    <style>
+        section.program h2.isActive:after {
+            content: none;
+        }
+
+        section.program div.sec_wrapper {
+            border-bottom: none;
+        }
+    </style>
+
+
+    <style>
+        .news__title {
+            font-size: 40px;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            font-family: futura-pt,
+                sans-serif;
+            color: #242424;
+        }
+
+        .main {
+            margin-top: 157px;
+
+        }
+
+        h1 {
+            font-size: 40px !important;
+            line-height: calc(40 / 60);
+            letter-spacing: 0em;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                font-size: 28px !important;
+                line-height: 1.2;
+            }
+        }
+
+        h1 span {
+            color: #199A68;
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        div.youtube {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        header('../');
+    </script>
+
+    <header class="kaso">
+        <!----------------main img------------------>
+
+        <div class="sec_wrapper">
+
+            <!-- <img src="../images/fig/kaso/fig_left.svg" alt="" class="fig_left" /> -->
+
+
+
+
+            <h1>東大Week<br/ class="dpcnone580" />@Marunouchi <span>2023</span></h1>
+
+            <div class="youtube">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IvliLIR-scQ?si=wK2QqKO0o85aunAT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+            </div>
+
+
+            <!-- <img src="../images/fig/kaso/fig_right.svg" alt="" class="fig_right" /> -->
+
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ここからメイン -->
+    <main class="main" id="main">
+
+        <!----------------program------------------>
+        <a name="program" id="program"></a>
+
+        <section class="program">
+            <div class="sec_wrapper">
+                <!-- <img src="../images/fig/program_fig.svg" alt="" class="program_fig  fig_anime" /> -->
+                <p class="exp">＊ 2023年度の開催は終了いたしました。 ご参加ありがとうございました。</p>
+
+                <h2 class="h2_program h2_line">プログラム<img src="../images/h2_program.svg" class="animation_h2"
+                        alt="program" style="opacity: 1;" />
+                </h2>
+
+
+                <div class="pro_d01">
+
+                    <img src="../images/fig/program01_fig.svg" alt="" class="program01_fig fig_anime" />
+
+                    <h3 class="p_date">08/08 (Tue)</h3>
+                    <div class="pro_d01_02">
+                        <div class="p_con">
+                            <h5 class="p_time dpcnone">18:30 ~ 20:00</h5>
+                            <h4 class="p_venue">会場：<a href="https://www.garb.jp/" target="_blank">GARB Tokyo</a></h4>
+                            <h5 class="p_time dspnone">18:30 ~ 20:00</h5>
+                        </div>
+                        <p class="price">※参加費：1,000円（ワンドリンク+軽食付）<br /><span class="fred">※立ち見の場合あり。</span></p>
+
+                        <p class="p_title dpcnone">AIがもたらす幸福とは。～人工知能がもたらす未来の明と暗～</p>
+                    </div>
+
+                    <p class="p_title dspnone">AIがもたらす幸福とは。～人工知能がもたらす未来の明と暗～</p>
+
+                    <ul class="ul_d01">
+                        <li>
+                            <img src="../images/program/p01_01.png" alt="横山 広美" />
+                            <div class="li_s_flex">
+                                <h3 class="p_name">横山 広美</h3>
+                                <h4 class="p_position">東京大学教授<br />
+                                    カブリ数物連携宇宙研究機構<br class="dspnone580" />
+                                    副機構長<br />
+                                    学際情報学府兼担</h4>
+                        </li>
+                        </li>
+                        <li>
+                            <img src="../images/program/p01_02.png" alt="松尾 豊" />
+                            <div class="li_s_flex">
+                                <h3 class="p_name">松尾 豊</h3>
+                                <h4 class="p_position">東京大学大学院工学系研究科<br />
+                                    教授</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../images/program/p01_03.png" alt="鎌田 富久" />
+                            <div class="li_s_flex">
+                                <h3 class="p_name">鎌田 富久</h3>
+                                <h4 class="p_position p_short">TomyK Ltd. 代表</h4>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn_area">
+                        <div class="btn_detail"><a class="modalOpen" data-modal="modal1">More Detail +</a></div>
+
+                        <!----- modal start ----->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="m_venue">08/08 (Tue) <br class="dpcnone580" />18:30 ~ 20:00　<br
+                                            class="dpcnone580" /><span>会場：GARB Tokyo</span></h4>
+                                    <h5 class="m_price">※参加費：1,000円（ワンドリンク+軽食付）<br /><span
+                                            class="fred">※立ち見の場合あり。</span>
+                                    </h5>
+                                    <span class="modalClose">×</span>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="m_title">AIがもたらす幸福とは。～人工知能がもたらす未来の明と暗～</h3>
+                                    <p>技術進化がめざましいAIにより、我々の生活、企業、大学、街はどう変わるのでしょうか。人類はそれをコントロールできるのか、良い方向に導く術は何なのか。人とロボット・AIの境界線、知能の正体とは。
+                                        AIが我々にせまる哲学的問いに、どう答えるのか。東京大学の知×丸の内で未来を妄想します。</p>
+
+                                    <ul class="m_d01">
+                                        <li>
+                                            <dl>
+                                                <dt>
+                                                    <img src="../images/program/p01_01.png" alt="横山 広美" />
+                                                </dt>
+                                                <dd>
+                                                    <h3 class="m_name">横山 広美</h3>
+                                                    <h4 class="m_position">東京大学教授<br />
+                                                        カブリ数物連携宇宙研究機構副機構長<br />
+                                                        学際情報学府兼担
+                                                    </h4>
+                                                    <p class="m_profile dspnone580">
+                                                        専門は科学技術社会論。科学と社会に関して広く関心がある。AIの倫理、理系女子、ビッグサイエンス、科学者の社会的責任論などを研究。東京理科大学理工学研究科物理学専攻博士課程修了、博士（理学）。東京大学理学系研究科准教授等を経て現職。独立行政法人高等専門学校機構理事、国際物理オリンピック2023協会理事。
+                                                    </p>
+                                                </dd>
+                                            </dl>
+                                            <p class="m_profile dpcnone580">
+                                                専門は科学技術社会論。科学と社会に関して広く関心がある。AIの倫理、理系女子、ビッグサイエンス、科学者の社会的責任論などを研究。東京理科大学理工学研究科物理学専攻博士課程修了、博士（理学）。東京大学理学系研究科准教授等を経て現職。独立行政法人高等専門学校機構理事、国際物理オリンピック2023協会理事。
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>
+                                                    <img src="../images/program/p01_02.png" alt="松尾 豊" />
+                                                </dt>
+                                                <dd>
+                                                    <h3 class="m_name">松尾 豊</h3>
+                                                    <h4 class="m_position">東京大学大学院工学系研究科<br />教授</h4>
+                                                    <p class="m_profile dspnone580">
+                                                        2002年東京大学大学院博士課程修了。博士（工学）。2007年より、東京大学大学院工学系研究科准教授。2019年より同教授。専門分野は、人工知能、深層学習、ウェブマイニング。2017年より日本ディープラーニング協会理事長。2019年よりソフトバンクグループ社外取締役。2020～2022年人工知能学会、情報処理学会理事。
+                                                    </p>
+                                                </dd>
+                                            </dl>
+                                            <p class="m_profile dpcnone580">
+                                                2002年東京大学大学院博士課程修了。博士（工学）。2007年より、東京大学大学院工学系研究科准教授。2019年より同教授。専門分野は、人工知能、深層学習、ウェブマイニング。2017年より日本ディープラーニング協会理事長。2019年よりソフトバンクグループ社外取締役。2020～2022年人工知能学会、情報処理学会理事。
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>
+                                                    <img src="../images/program/p01_03.png" alt="鎌田 富久" />
+                                                </dt>
+                                                <dd>
+                                                    <h3 class="m_name">鎌田 富久</h3>
+                                                    <h4 class="m_position">TomyK Ltd. 代表</h4>
+                                                    <p class="m_profile dspnone580">
+                                                        東京大学大学院理学系研究科情報科学博士課程修了。理学博士。在学中にベンチャー企業ACCESS社を設立し、世界初の携帯電話向けウェブブラウザを開発するなどモバイルインターネットの技術革新を牽引。2001年に上場。2012年にTomyKを設立し、DeepTech
+                                                        Startupを多数支援。東京大学大学院(情報理工)特任教授。医療AIのLPIXEL代表取締役も務める。</p>
+                                                </dd>
+                                            </dl>
+                                            <p class="m_profile dpcnone580">
+                                                東京大学大学院理学系研究科情報科学博士課程修了。理学博士。在学中にベンチャー企業ACCESS社を設立し、世界初の携帯電話向けウェブブラウザを開発するなどモバイルインターネットの技術革新を牽引。2001年に上場。2012年にTomyKを設立し、DeepTech
+                                                Startupを多数支援。東京大学大学院(情報理工)特任教授。医療AIのLPIXEL代表取締役も務める。</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08081830-garb.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----- modal end ----->
+
+                        <div class="btn_peatix"><a href="https://tw2023-08081830-garb.peatix.com" target="_blank">Peatix
+                                →</a></div>
+                    </div>
+
+                </div>
+                <!-- end pro_d01 -->
+
+                <!------  DAY 2 start ------->
+
+                <div class="pro_d02">
+
+                    <img src="../images/fig/program02_fig.svg" alt="" class="program02_fig fig_anime" />
+
+                    <h3 class="p_date">08/09 (Wed)</h3>
+
+                    <div class="day_wrap">
+
+                        <div class="pro_d02_02">
+                            <h5 class="p_time dpcnone">18:00 ~ 18:45</h5>
+                            <h4 class="p_venue"><span>会場：</span><a href="https://yurakucho-micro.com/"
+                                    target="_blank">有楽町
+                                    micro<br /> FOOD & IDEA MARKET</a></h4>
+
+                            <p class="price">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                    class="fred">※立ち見の場合あり。</span>
+                            </p>
+
+                            <p class="p_title dpcnone">ヘルスケア・医療の「エシカル消費」</p>
+                        </div>
+
+                        <div class="pro_d02_03">
+
+                            <div class="pro_d02_03_inner">
+                                <h5 class="p_time dspnone">18:00 ~ 18:45</h5>
+
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p02_01.png" alt="武藤 香織" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">ヘルスケア・医療の「エシカル消費」</p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">武藤 香織</h3>
+                                            <h4 class="p_position">東京大学医科学研究所公共政策研究分野<br />
+                                                教授</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal2">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal2" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/09 (Wed) <br class="dpcnone580" />18:00 ~
+                                                    18:45　<br class="dpcnone580" /><span>会場：有楽町micro FOOD & IDEA
+                                                        MARKET</span>
+                                                </h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">ヘルスケア・医療の「エシカル消費」</h3>
+                                                <p>ヘルスケアや医療の分野では、公的に保障されるものだけでなく、個人の自己負担で受けるものも増えています。しかし、なかには科学的な根拠が不十分だったり、生命倫理の観点から課題を抱えたりしているサービスも含まれています。SDGsの12番目「つくる責任、つかう責任」の流れを汲んで、人や社会、環境に配慮した消費行動である「エシカル（倫理的）消費」が普及しつつあります。ヘルスケアや医療サービスについての「エシカル」を考える時間にしたいと思います。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p02_01.png" alt="武藤 香織" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">武藤 香織</h3>
+                                                                <h4 class="m_position">東京大学医科学研究所 公共政策研究分野<br />教授</h4>
+                                                                <p class="m_profile dspnone580">
+                                                                    1993年慶應義塾大学文学部卒業。1995年同大学院社会学研究科修士課程修了。1998年東京大学大学院医学系研究科国際保健学専攻博士課程単位取得満期退学。2002年博士（保健学）取得。米国ブラウン大学、信州大学を経て、2007年より東京大学医科学研究所准教授、2013年より現職。専門は医療社会学、研究倫理・医療倫理。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">
+                                                            1993年慶應義塾大学文学部卒業。1995年同大学院社会学研究科修士課程修了。1998年東京大学大学院医学系研究科国際保健学専攻博士課程単位取得満期退学。2002年博士（保健学）取得。米国ブラウン大学、信州大学を経て、2007年より東京大学医科学研究所准教授、2013年より現職。専門は医療社会学、研究倫理・医療倫理。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08091800-micro.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08091800-micro.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+                            <div class="pro_d02_03_inner line_border_top">
+                                <h5 class="p_time">19:15 ~ 20:00</h5>
+                                <h4 class="p_venue dpcnone"><span>会場：</span><a href="https://yurakucho-micro.com/"
+                                        target="_blank">有楽町 micro<br /> FOOD & IDEA MARKET</a></h4>
+                                <p class="price dpcnone">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                        class="fred">※立ち見の場合あり。</span></p>
+                                <p class="p_title dpcnone">そんなに良いところ？〜憧れのハワイの現実と課題～</p>
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p02_02.png" alt="矢口 祐人" />
+                                    </dt>
+                                    <dd>
+
+                                        <p class="p_title dspnone">そんなに良いところ？〜憧れのハワイの現実と課題～</p>
+
+                                        <div class="p_profile">
+                                            <h3 class="p_name">矢口 祐人</h3>
+                                            <h4 class="p_position">
+                                                東京大学副学長（グローバル教育推進）<br />グローバル教育センター長<br />大学院総合文化研究科教授
+                                            </h4>
+                                        </div>
+
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal3">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal3" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/09 (Wed) <br class="dpcnone580" />19:15 ~
+                                                    20:00　<br class="dpcnone580" /><span>会場：有楽町micro FOOD & IDEA
+                                                        MARKET</span>
+                                                </h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">そんなに良いところ？〜憧れのハワイの現実と課題～</h3>
+                                                <p>ハワイといえばビーチ、トロピカルパンケーキ、フラダンスなど、日本人にとっては楽しい癒しの観光地とされています。日本のメディアや旅行産業も盛んにそのようなイメージを強調してきました。本講義では一面的なハワイ理解から一歩進んで、「観光地ハワイ」の言説が生み出してきた諸問題を具体的に取り上げます。講義を通して、今日の観光関連産業と観光客に求められる社会的責任について皆さんと話し合いたいと願っています。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p02_02.png" alt="矢口 祐人" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">矢口 祐人</h3>
+                                                                <h4 class="m_position">
+                                                                    東京大学副学長（グローバル教育推進）<br />グローバル教育センター長<br />大学院総合文化研究科教授
+                                                                </h4>
+                                                                <p class="m_profile dspnone580">札幌生まれ。アメリカインディアナ州のGoshen
+                                                                    Collegeを卒業後、ヴァージニア州のCollege of William and
+                                                                    Maryでアメリカ研究のMA/Ph.D.を取得。アメリカ文化論、とりわけハワイを中心とした文化表象や歴史の記憶論に関心がある。近年はAIと社会の関係を考察するプロジェクトに参加し、AIが歴史や博物館に与える影響などを考えている。また東大の国際化教育推進担当の副学長としてグローバル教育を推進している。日本語の著者に『ハワイの歴史と文化』（中公新書）、『憧れのハワイ』（中央公論新社）、『奇妙なアメリカ』（新潮選書）、『現代アメリカ講義』（東京大学出版会）等。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">札幌生まれ。アメリカインディアナ州のGoshen
+                                                            Collegeを卒業後、ヴァージニア州のCollege of William and
+                                                            Maryでアメリカ研究のMA/Ph.D.を取得。アメリカ文化論、とりわけハワイを中心とした文化表象や歴史の記憶論に関心がある。近年はAIと社会の関係を考察するプロジェクトに参加し、AIが歴史や博物館に与える影響などを考えている。また東大の国際化教育推進担当の副学長としてグローバル教育を推進している。日本語の著者に『ハワイの歴史と文化』（中公新書）、『憧れのハワイ』（中央公論新社）、『奇妙なアメリカ』（新潮選書）、『現代アメリカ講義』（東京大学出版会）等。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08091915-micro.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08091915-micro.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+                        </div>
+                        <!-- end pro_d02_03 -->
+                        <!-- end pro_d02_micro FOOD & IDEA MARKET -->
+
+                        <hr class="hr_line" />
+
+
+                        <div class="pro_d02_02 ">
+                            <h5 class="p_time dpcnone">18:00 ~ 18:45</h5>
+                            <h4 class="p_venue">会場：<a href="https://www.garb.jp/" target="_blank">GARB Tokyo</a></h4>
+                            <p class="price">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                    class="fred">※立ち見の場合あり。</span>
+                            </p>
+                            <p class="p_title dpcnone">これからの時代の大学教育</p>
+                        </div>
+
+                        <div class="pro_d02_03">
+                            <div class="pro_d02_03_inner">
+                                <h5 class="p_time dspnone">18:00 ~ 18:45</h5>
+
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p02_03.png" alt="両角 亜希子" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">これからの時代の大学教育</p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">両角 亜希子</h3>
+                                            <h4 class="p_position">東京大学大学院教育学研究科<br />教授</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal4">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal4" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/09 (Wed) <br class="dpcnone580" />18:00 ~
+                                                    18:45　<br class="dpcnone580" /><span>会場：GARB Tokyo</span></h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">これからの時代の大学教育</h3>
+                                                <p>現在は社会環境の変化が急速で予想不能な時代です。少子化で大学経営の厳しさが増すと同時に、AIの急速な進歩の中で何を教育すればよいのかも根本的に問われています。こうした中で大学教育はどのように役割を果たせるのでしょうか。知識を学ぶだけでなく、汎用的な能力の獲得、学び方を学ぶこと、学習成果の可視化などが大切だと指摘をされています。実際に、日本の大学はどのように変化しており、どのような可能性と課題があるのでしょうか。社会人の学び直しへの期待も高まっています。最近の政策動向や大学教育の実態についてデータ等をご紹介しながら議論します。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p02_03.png" alt="両角 亜希子" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">両角 亜希子</h3>
+                                                                <h4 class="m_position">東京大学大学院教育学研究科<br />教授</h4>
+                                                                <p class="m_profile dspnone580">
+                                                                    慶應義塾大学環境情報学部卒業、東京大学大学院教育学研究科修了。博士（教育学）。
+                                                                    産業技術総合研究所技術と社会研究センター研究員、東京大学大学総合教育研究センター助手・助教、東京大学大学院教育学研究科　大学経営・政策コース講師、准教授を経て現職。専門は高等教育論。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">
+                                                            慶應義塾大学環境情報学部卒業、東京大学大学院教育学研究科修了。博士（教育学）。
+                                                            産業技術総合研究所技術と社会研究センター研究員、東京大学大学総合教育研究センター助手・助教、東京大学大学院教育学研究科　大学経営・政策コース講師、准教授を経て現職。専門は高等教育論。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08091800-garb.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08091800-garb.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+                            <div class="pro_d02_03_inner line_border_top">
+                                <h5 class="p_time">19:15 ~ 20:00</h5>
+                                <h4 class="p_venue dpcnone">会場：<a href="https://www.garb.jp/" target="_blank">GARB
+                                        Tokyo</a>
+                                </h4>
+                                <p class="price dpcnone">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                        class="fred">※立ち見の場合あり。</span></p>
+                                <p class="p_title dpcnone">自動運転の民主化</p>
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p02_04.png" alt="加藤 真平" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">自動運転の民主化</p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">加藤 真平</h3>
+                                            <h4 class="p_position">東京大学大学院情報理工学系研究科<br />特任准教授</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal5">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal5" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/09 (Wed) <br class="dpcnone580" />19:15 ~
+                                                    20:00　<br class="dpcnone580" /><span>会場：GARB Tokyo</span></h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">自動運転の民主化</h3>
+                                                <p>世界初のオープンソース自動運転OS「Autoware」の誕生から8年。国内外で多くの自動運転プロジェクトに採用され、これまでに導入した企業は500社を超えます。日本の小さなスタートアップ企業であるティアフォーが自動運転業界のLinuxを目指して始めた挑戦は、今や世界中の企業を巻き込み、一つの大きな輪になろうとしています。<br />
+                                                    様々な組織・個人がその発展に貢献でき、世界中の人々がその恩恵を享受できる、Autowareを中心としたエコシステムによって実現される「自動運転の民主化」についてお話します。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p02_04.png" alt="加藤 真平" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">加藤 真平</h3>
+                                                                <h4 class="m_position">東京大学大学院情報理工学系研究科<br />特任准教授</h4>
+                                                                <p class="m_profile dspnone580">1982年
+                                                                    神奈川県生まれ。慶應義塾大学大学院理工学研究科博士課程修了。カーネギーメロン大学研究員、カリフォルニア大学研究員、名古屋大学准教授を経て、2016
+                                                                    年 東京大学准教授に着任（2023年4月より現職）。2015年
+                                                                    自動運転OS「Autoware」を開発し、オープンソースとして公開。同年、株式会社ティアフォーを創業。2018年
+                                                                    The Autoware
+                                                                    Foundationを設立。専門はオペレーティングシステム、組込みリアルタイムシステム、並列分散システム。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">1982年
+                                                            神奈川県生まれ。慶應義塾大学大学院理工学研究科博士課程修了。カーネギーメロン大学研究員、カリフォルニア大学研究員、名古屋大学准教授を経て、2016
+                                                            年 東京大学准教授に着任（2023年4月より現職）。2015年
+                                                            自動運転OS「Autoware」を開発し、オープンソースとして公開。同年、株式会社ティアフォーを創業。2018年 The
+                                                            Autoware
+                                                            Foundationを設立。専門はオペレーティングシステム、組込みリアルタイムシステム、並列分散システム。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08091915-garb.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08091915-garb.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+                            <!-- end pro_d02_GARB Tokyo -->
+
+                        </div>
+                        <!-- end pro_d02_03 -->
+
+                    </div>
+                    <!-- end day_wrap -->
+
+                </div>
+                <!-- end pro_d02 -->
+
+                <!------  DAY 3 start ------->
+
+                <div class="pro_d02">
+
+                    <img src="../images/fig/program03_fig.svg" alt="" class="program03_fig fig_anime" />
+
+                    <h3 class="p_date">08/10 (Thu)</h3>
+
+                    <div class="day_wrap">
+
+
+                        <div class="pro_d02_02">
+                            <h5 class="p_time dpcnone">18:00 ~ 18:45</h5>
+                            <h4 class="p_venue"><span>会場：</span><a href="https://yurakucho-micro.com/"
+                                    target="_blank">有楽町
+                                    micro<br /> FOOD & IDEA MARKET</a></h4>
+
+                            <p class="price">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                    class="fred">※立ち見の場合あり。</span>
+                            </p>
+                            <p class="p_title dpcnone">包摂的な職場つくりについて　～当事者研究の視点から～</p>
+                        </div>
+
+                        <div class="pro_d02_03">
+
+                            <div class="pro_d02_03_inner">
+                                <h5 class="p_time dspnone">18:00 ~ 18:45</h5>
+
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p03_01.png" alt="熊谷 晋一郎" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">包摂的な職場つくりについて　～当事者研究の視点から～</p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">熊谷 晋一郎</h3>
+                                            <h4 class="p_position">東京大学先端科学技術研究センター<br />准教授</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal6">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal6" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/10 (Thu) <br class="dpcnone580" />18:00 ~
+                                                    18:45　<br class="dpcnone580" /><span>会場：有楽町 micro FOOD & IDEA
+                                                        MARKET</span>
+                                                </h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">包摂的な職場つくりについて　～当事者研究の視点から～</h3>
+                                                <p>多様な人々が、互いの強みと脆弱性を尊重しながら、協力し合って高い水準でミッションを達成するための条件は、どのようなものでしょうか。様々な困難を抱える当事者の語りと、高信頼性組織や共同創造を手がかりにしながら、皆さんと考えてみたいと思います。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p03_01.png" alt="熊谷 晋一郎" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">熊谷 晋一郎</h3>
+                                                                <h4 class="m_position">東京大学先端科学技術研究センター<br />准教授</h4>
+                                                                <p class="m_profile dspnone580">
+                                                                    新生児仮死の後遺症で、脳性マヒに。以後車いす生活となる。東京大学医学部医学科卒業後、千葉西病院小児科、埼玉医科大学小児心臓科での勤務を経て、現職。専門は小児科学、当事者研究。主な著作に、「リハビリの夜」（医学書院、2009年）、「発達障害当事者研究」（共著、医学書院、2008年）、「当事者研究」（岩波書店、2020年）、「＜責任＞の生成」（共著、新曜社、2020年）など。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">
+                                                            新生児仮死の後遺症で、脳性マヒに。以後車いす生活となる。東京大学医学部医学科卒業後、千葉西病院小児科、埼玉医科大学小児心臓科での勤務を経て、現職。専門は小児科学、当事者研究。主な著作に、「リハビリの夜」（医学書院、2009年）、「発達障害当事者研究」（共著、医学書院、2008年）、「当事者研究」（岩波書店、2020年）、「＜責任＞の生成」（共著、新曜社、2020年）など。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08101800-micro.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08101800-micro.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+
+                            <div class="pro_d02_03_inner line_border_top">
+                                <h5 class="p_time">19:15 ~ 20:00</h5>
+                                <h4 class="p_venue dpcnone"><span>会場：</span><a href="https://yurakucho-micro.com/"
+                                        target="_blank">有楽町 micro<br /> FOOD & IDEA MARKET</a></h4>
+
+                                <p class="price dpcnone">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                        class="fred">※立ち見の場合あり。</span></p>
+                                <p class="p_title dpcnone">Material Experience Design　～物理素材を活かすインタフェースと実世界体験の創出～</p>
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p03_02.png" alt="筧 康明" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">Material Experience Design　～物理素材を活かすインタフェースと実世界体験の創出～
+                                        </p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">筧 康明</h3>
+                                            <h4 class="p_position">東京大学大学院情報学環<br />教授</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal7">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal7" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/10 (Thu) <br class="dpcnone580" />19:15 ~
+                                                    20:00　<br class="dpcnone580" /><span>会場：有楽町 micro FOOD & IDEA
+                                                        MARKET</span>
+                                                </h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">Material Experience
+                                                    Design　～物理素材を活かすインタフェースと実世界体験の創出～
+                                                </h3>
+                                                <p>メタバースに代表されるバーチャルな環境および技術進化と共に、デジタル技術と物理環境の調和を図り、実世界における体験を拡張するメディア技術やデザインにも注目が集まっています。本講演では、環境応答性の機能を持つ織物や、水中の気泡による情報表示、風や雨に反応する植物センサ、即興的に空間を作る変形モジュール、見えない気流を感じるインスタレーションなど、物理素材や空間の特性を活かすインタフェース研究やプロダクト、アート作品の一部を紹介します。これらの研究の背景や展望を示すと共に、人間や環境と調和する技術や表現の可能性について議論したいと思います。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p03_02.png" alt="筧 康明" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">筧 康明</h3>
+                                                                <h4 class="m_position">東京大学大学院情報学環<br />教授</h4>
+                                                                <p class="m_profile dspnone580">
+                                                                    2007年東京大学大学院学際情報学府博士課程修了。博士（学際情報学）。慶應義塾大学等を経て、2018年より東京大学大学院情報学環准教授、2022年より同教授。同先端表現情報学コース長。実体性を有するインタラクティブメディア技術およびデジタルファブリケーションの研究に従事し、メディアアート作品制作やデザインに携わる。文化庁メディア芸術祭優秀賞、欧州委員会STARTS
+                                                                    Prize Honorary Mention、文部科学大臣表彰若手科学者賞など受賞。</p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">
+                                                            2007年東京大学大学院学際情報学府博士課程修了。博士（学際情報学）。慶應義塾大学等を経て、2018年より東京大学大学院情報学環准教授、2022年より同教授。同先端表現情報学コース長。実体性を有するインタラクティブメディア技術およびデジタルファブリケーションの研究に従事し、メディアアート作品制作やデザインに携わる。文化庁メディア芸術祭優秀賞、欧州委員会STARTS
+                                                            Prize Honorary Mention、文部科学大臣表彰若手科学者賞など受賞。</p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08101915-micro.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08101915-micro.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+                        </div>
+                        <!-- end pro_d02_03 -->
+                        <!-- end pro_d03_micro FOOD & IDEA MARKET -->
+
+                        <hr class="hr_line" />
+
+                        <div class="pro_d02_02">
+                            <h5 class="p_time dpcnone">18:00 ~ 18:45</h5>
+                            <h4 class="p_venue">会場：<a href="https://www.garb.jp/" target="_blank">GARB Tokyo</a></h4>
+                            <p class="price">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                    class="fred">※立ち見の場合あり。</span>
+                            </p>
+                            <p class="p_title dpcnone">技術と心をつなぐデザイン</p>
+                        </div>
+
+                        <div class="pro_d02_03">
+                            <div class="pro_d02_03_inner">
+                                <h5 class="p_time dspnone">18:00 ~ 18:45</h5>
+
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p03_03.png" alt="吉本 英樹" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">技術と心をつなぐデザイン</p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">吉本 英樹</h3>
+                                            <h4 class="p_position">東京大学先端科学技術研究センター特任准教授 <br />TANGENT創業者</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal8">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal8" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/10 (Thu) <br class="dpcnone580" />18:00 ~
+                                                    18:45　<br class="dpcnone580" /><span>会場：GARB Tokyo</span></h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">技術と心をつなぐデザイン</h3>
+                                                <p>デザインという言葉は、ビジネスの様々な場面で謳われるようになりましたが、ではデザインとは何か、何を果たせるのかと問われれば、なかなか定めることが難しいものだと思います。これまでデザイナー
+                                                    /
+                                                    クリエイティブディレクターとして手がけてきた仕事をご紹介しながら、私の考えをお話ししたいと思います。特に、新しいテクノロジーと伝統をつなぐプロジェクトを通じて、技術と人の心をつなぐためにデザインが果たせる役割について、議論できればと思います。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p03_03.png" alt="吉本 英樹" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">吉本 英樹</h3>
+                                                                <h4 class="m_position">
+                                                                    東京大学先端科学技術研究センター特任准教授<br />TANGENT創業者
+                                                                </h4>
+                                                                <p class="m_profile dspnone580">
+                                                                    東京大学にて航空宇宙工学修士号、英国ロイヤル・カレッジ・オブ・アートにてデザイン工学博士号を取得。2015年、英国ロンドンにて、デザインエンジニアリングスタジオ「Tangent」設立。2020年、東京大学先端科学技術研究センター特任准教授に着任し、先端アートデザイン分野を共同設立。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">
+                                                            東京大学にて航空宇宙工学修士号、英国ロイヤル・カレッジ・オブ・アートにてデザイン工学博士号を取得。2015年、英国ロンドンにて、デザインエンジニアリングスタジオ「Tangent」設立。2020年、東京大学先端科学技術研究センター特任准教授に着任し、先端アートデザイン分野を共同設立。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08101800-garb.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08101800-garb.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+
+                            <div class="pro_d02_03_inner line_border_top">
+                                <h5 class="p_time">19:15 ~ 20:00</h5>
+                                <h4 class="p_venue dpcnone">会場：<a href="https://www.garb.jp/" target="_blank">GARB
+                                        Tokyo</a>
+                                </h4>
+                                <p class="price dpcnone">※参加費無料<br />（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                        class="fred">※立ち見の場合あり。</span></p>
+                                <p class="p_title dpcnone">空の旅の舞台裏に迫る　～航空輸送と航空交通管理の最新トレンド～</p>
+                                <dl>
+                                    <dt>
+                                        <img src="../images/program/p03_04.png" alt="伊藤 恵理" />
+                                    </dt>
+                                    <dd>
+                                        <p class="p_title dspnone">空の旅の舞台裏に迫る　～航空輸送と航空交通管理の最新トレンド～</p>
+                                        <div class="p_profile">
+                                            <h3 class="p_name">伊藤 恵理</h3>
+                                            <h4 class="p_position">東京大学先端科学技術研究センター<br />
+                                                教授</h4>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="btn_area">
+                                    <div class="btn_detail"><a class="modalOpen" data-modal="modal9">More Detail +</a>
+                                    </div>
+
+                                    <!----- modal start ----->
+                                    <div id="modal9" class="modal">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="m_venue">08/10 (Thu) <br class="dpcnone580" />19:15 ~
+                                                    20:00　<br class="dpcnone580" /><span>会場：GARB Tokyo</span></h4>
+                                                <h5 class="m_price">※参加費無料（ワンドリンク付。2杯目以降は実費となります。）<br /><span
+                                                        class="fred">※立ち見の場合あり。</span></h5>
+                                                <span class="modalClose">×</span>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3 class="m_title">空の旅の舞台裏に迫る　～航空輸送と航空交通管理の最新トレンド～</h3>
+                                                <p>航空輸送は、人類のモビリティ（移動・交通手段に関するモノ・コト全般）に、大きな変革をもたらします。世界の航空関連組織は、今後20年間に旅客および貨物輸送の需要がCOVID-19以前の2倍以上に増加すると予測しています。その3分の1以上はアジア環太平洋地域に集中するといわれており、日本の首都圏空港等は航空需要に応える対策の他、モビリティ関連事業の拡充を発表しています。そこで本講演では「エアモビリティとAI」「航空輸送とSDGs」などの最新トレンドを取り入れながら、空の旅の舞台裏で進む研究開発に迫ります。
+                                                </p>
+
+                                                <ul class="m_d01">
+                                                    <li>
+                                                        <dl>
+                                                            <dt>
+                                                                <img src="../images/program/p03_04.png" alt="伊藤 恵理" />
+                                                            </dt>
+                                                            <dd>
+                                                                <h3 class="m_name">伊藤 恵理</h3>
+                                                                <h4 class="m_position">東京大学先端科学技術研究センター<br />教授</h4>
+                                                                <p class="m_profile dspnone580">
+                                                                    「空はひとつ」をモットーに、世界の空を駆けながら、航空輸送、航空交通管理システムを起点とした「航空宇宙モビリティ」の研究開発に従事。東京大学大学院博士課程修了（航空宇宙工学専攻）。オランダ航空宇宙研究所、NASAエイムズ研究所、電子航法研究所、南洋理工大学などでの研究歴を経て、2022年より東京大学
+                                                                    教授（現職）。著書に『空の旅を科学する　人工知能が拓く！？21世紀の航空管制』、『みんなでつくるAI時代　これからの教養としてのSTEAM』、『航空交通管理システム概論』がある。
+                                                                </p>
+                                                            </dd>
+                                                        </dl>
+                                                        <p class="m_profile dpcnone580">
+                                                            「空はひとつ」をモットーに、世界の空を駆けながら、航空輸送、航空交通管理システムを起点とした「航空宇宙モビリティ」の研究開発に従事。東京大学大学院博士課程修了（航空宇宙工学専攻）。オランダ航空宇宙研究所、NASAエイムズ研究所、電子航法研究所、南洋理工大学などでの研究歴を経て、2022年より東京大学
+                                                            教授（現職）。著書に『空の旅を科学する　人工知能が拓く！？21世紀の航空管制』、『みんなでつくるAI時代　これからの教養としてのSTEAM』、『航空交通管理システム概論』がある。
+                                                        </p>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="btn_peatix"><a
+                                                        href="https://tw2023-08101915-garb.peatix.com"
+                                                        target="_blank">Peatix →</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- modal end ----->
+
+                                    <div class="btn_peatix"><a href="https://tw2023-08101915-garb.peatix.com"
+                                            target="_blank">Peatix →</a></div>
+                                </div>
+
+                            </div>
+                            <!-- end pro_d02_03_inner -->
+                            <!-- end pro_d03_GARB Tokyo -->
+
+                        </div>
+                        <!-- end pro_d02_03 -->
+
+                    </div>
+                    <!-- end day_wrap -->
+
+                </div>
+                <!-- end pro_d03 -->
+
+
+            </div>
+            <!-- end sec wrapper -->
+        </section>
+
+    </main>
+
+    <script>
+        footer('../');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/gsap.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+    <script>
+        const modalBtns = document.querySelectorAll(".modalOpen");
+        modalBtns.forEach(function (btn) {
+            btn.onclick = function () {
+                var modal = btn.getAttribute('data-modal');
+                document.getElementById(modal).style.display = "block";
+            };
+        });
+        const closeBtns = document.querySelectorAll(".modalClose");
+        closeBtns.forEach(function (btn) {
+            btn.onclick = function () {
+                var modal = btn.closest('.modal');
+                modal.style.display = "none";
+            };
+        });
+
+        window.onclick = function (event) {
+            if (event.target.className === "modal") {
+                event.target.style.display = "none";
+            }
+        };
+
+
+        //h2 animation
+        $(function () {
+
+            $(window).on('load scroll', function () {
+                //現時点のスクロールの高さ取得
+                var scrollPosition = $(window).scrollTop();
+                //ウィンドウの高さ取得
+                var windowHeight = $(window).height();
+
+                $('.animation_h2').each(function () {
+                    //要素の位置（高さ）を取得
+                    var elemPosition = $(this).offset().top;
+                    //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+                    if (elemPosition < scrollPosition + windowHeight) {
+                        $(this).css({
+                            opacity: 1,
+                            transform: 'translateX(0)'
+                        });
+                    }
+                });
+
+                $('.h2_line').each(function () {
+                    //要素の位置（高さ）を取得
+                    var elemPosition = $(this).offset().top;
+                    //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+                    if (elemPosition < scrollPosition + windowHeight) {
+                        $(this).addClass("isActive");
+                    }
+                });
+
+                $('.fig_anime').each(function () {
+                    //要素の位置（高さ）を取得
+                    var elemPosition = $(this).offset().top;
+                    //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+                    if (elemPosition < scrollPosition + windowHeight) {
+                        $(this).css({
+                            opacity: 1,
+                            transform: 'translateX(0)'
+                        });
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

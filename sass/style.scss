@@ -1,0 +1,185 @@
+$inner: 1120px;
+$padding-pc: 25px;
+$padding-sp: 16px;
+
+@function strip-unit($value) {
+    @return ($value / 1px);
+}
+
+/*--------------------------
+文字に対して、一括でfont-size、line-height、letter-spacing、font-weightを指定する
+---------------------------*/
+@mixin font($font-size: null,
+    $line-height: null,
+    $letter-spacing: null,
+    $font-weight: null) {
+    @if $font-size {
+        font-size: calc($font-size * 1px);
+    }
+
+    @if $line-height {
+        line-height: calc($line-height / 100);
+    }
+
+    @if $letter-spacing {
+        letter-spacing: calc($letter-spacing / 100 * 1em);
+    }
+
+    @if $font-weight {
+        font-weight: $font-weight;
+    }
+}
+
+@mixin f($font-size: null,
+    $line-height: null,
+    $letter-spacing: null,
+    $font-weight: null) {
+    @if $font-size {
+        font-size: calc($font-size * 1px);
+    }
+
+    @if $line-height {
+        line-height: calc($line-height / $font-size);
+    }
+
+    @if $letter-spacing {
+        letter-spacing: calc($letter-spacing / 100 * 1em);
+    }
+
+    @if $font-weight {
+        font-weight: $font-weight;
+    }
+}
+
+/*--------------------------------
+    remの換算
+--------------------------------*/
+
+@function rem($pixel) {
+    @return calc($pixel / 16 * 1rem);
+}
+
+/*--------------------------------
+    vwにする
+--------------------------------*/
+@function vw($window_width, $size) {
+    @return calc($size / $window_width * 100vw);
+}
+
+@function vwmin($window_width, $size) {
+    @return min(calc($size / $window_width * 100vw), $size * 1px);
+}
+
+/*--------------------------------
+    親要素に対する割合
+--------------------------------*/
+@function per($parent_width, $child_width) {
+    @return calc($child_width / $parent_width * 100%);
+}
+
+/*--------------------------------
+一次関数
+画面幅 1440pxの時は、120pxで、そこからどんどん小さくなり、1000pxの時に20pxになるという実装の際に使える関数。
+--------------------------------*/
+@function linear_func($point_x1, $point_y1, $point_x2, $point_y2) {
+    @return calc(($point_y2 - $point_y1) * (100vw - $point_x1 * 1px) / ($point_x2 - $point_x1) + $point_y1 * 1px);
+}
+
+/*--------------------------------
+一次関数（最大値、最小値付き）
+画面幅 1440pxの時は、120pxで、そこからどんどん小さくなり、1000pxの時に20pxになるという実装の際に使える関数。
+--------------------------------*/
+@function linear_func_clamp($point_x1, $point_y1, $point_x2, $point_y2) {
+    @return clamp($point_y2 * 1px,
+        calc(($point_y2 - $point_y1) * (100vw - $point_x1 * 1px) / ($point_x2 - $point_x1) + $point_y1 * 1px),
+        $point_y1 * 1px);
+}
+
+/*--------------------------------
+リキッドの設定
+--------------------------------*/
+// html {
+//   //inner~max-screen
+//   font-size: 16px;
+
+//   //inner~768px
+//   @media (max-width: $inner) {
+//     font-size: vw(strip-unit($inner), 16);
+//   }
+
+//   @media (max-width: 767px) {
+//     font-size: 16px;
+//   }
+
+//   @media (max-width: 375px) {
+//     font-size: vw(375, 16);
+//   }
+// }
+
+/*--------------------------
+  フォント読み込み
+---------------------------*/
+// ゴシック体
+$sans: "Noto Sans JP",
+    sans-serif;
+
+// 明朝体
+$futura: "futura-pt", sans-serif;
+
+// IBM Plex Sans JP
+$en: "Outfit", sans-serif;
+$gothic: "Gothic A1", sans-serif;
+
+// フォントウェイトの変数指定
+$light: 300;
+$medium: 500;
+$regular: 400;
+$semi: 600;
+$bold: 700;
+$extra: 900;
+
+// カラーの変数指定
+$black: #383838;
+$white: #ffffff;
+$green: #199A68;
+$beige: #b4a173;
+$blue: #00ABE5;
+$pink: #F98994;
+
+body {
+    font-family: $sans;
+    color: $black;
+    background-color: $white;
+}
+
+//ブレイクポイント
+$breakpoints: (
+    sm: 580,
+    tb:650,
+    md: 880,
+    lg: 980,
+    xl: 1100,
+);
+
+//メディアクエリー
+$mediaquerys: (
+    sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
+    tb: "screen and (max-width: #{map-get($breakpoints,'tb')}px)",
+    md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+    lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+    xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
+@mixin mq($mediaquery: md) {
+    @media #{map-get($mediaquerys, $mediaquery)} {
+        @content;
+    }
+}
+
+
+@import "reset";
+@import "common";
+@import "test";
+@import "page";
+@import "top";

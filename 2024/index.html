@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <meta name="description" content="東大Week @ marunouchi 2025.7.30-7.31 知が躍動するまちへ" />
+    <!-- <meta name="keywords" content="" /> -->
+    <!-- ogp -->
+    <meta property="og:title" content="東大Week＠Marunouchi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todaiweek-marunouchi.jp" />
+    <meta property="og:image" content="../img/ogimage.png" />
+    <meta property="og:site_name" content="東大Week＠Marunouchi" />
+    <meta property="og:description" content="東大Week @ marunouchi 2025.7.30-7.31 知が躍動するまちへ" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/bvz6sgg.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <title>東大Week＠Marunouchi</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 過去のCSS -->
+    <link href="../css-archive/common.css" rel="stylesheet" />
+    <link href="../css-archive/style.css" rel="stylesheet" />
+    <link href="../css-archive/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script>
+        function header(rootDir) {
+            $.ajax({
+                url: rootDir + "include/header.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: "html",
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                },
+            });
+        }
+
+        function footer(rootDir) {
+            $.ajax({
+                url: rootDir + "include/footer.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: "html",
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                },
+            });
+        }
+    </script>
+
+    <style>
+        .news__title {
+            font-size: 40px;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            font-family: futura-pt, sans-serif;
+            color: #242424;
+        }
+
+        .main {
+            margin-top: 157px;
+        }
+
+        h1 {
+            font-size: 40px !important;
+            line-height: calc(40 / 60);
+            letter-spacing: 0em;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                font-size: 28px !important;
+                line-height: 1.2;
+            }
+        }
+
+        h1 span {
+            color: #199a68;
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        div.youtube {
+            margin-top: 40px;
+        }
+
+        section.program p.exp {
+            /* text-align: center; */
+            margin-bottom: 40px;
+        }
+
+        .sec_wrapper {
+            max-width: 1250px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        header("../");
+    </script>
+
+    <!-- ここからメイン -->
+    <main class="main" id="main">
+        <div class="sec_wrapper">
+            <!-- <img src="../images/fig/kaso/fig_left.svg" alt="" class="fig_left" /> -->
+
+            <h1>東大Week<br/ class="dpcnone580" />@Marunouchi <span>2024</span></h1>
+
+            <div class="youtube">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lwC4hMI54Og?si=siRTMdmfMOU9IfY-"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- <img src="../images/fig/kaso/fig_right.svg" alt="" class="fig_right" /> -->
+        </div>
+
+        <!-- programセクション -->
+        <section class="program" id="program">
+            <p class="sec_wrapper exp">
+                ＊ 2024年度の開催は終了いたしました。 ご参加ありがとうございました。
+            </p>
+            <div class="program__overlay js-modal-overlay"></div>
+            <div class="inner program__inner" data-aos="fade-up" data-aos-delay="0"
+                data-aos-anchor-placement="top-center">
+                <h2 class="news__title sec-title" data-ja="プログラム">Program</h2>
+                <p class="program__lead">
+                    各セッション毎にお申込みをいただけます。ご希望のセッションをクリックいただき、<br class="pc" />
+                    イベント管理サービスの「Peatix」からお申込みください。<br class="sp" />事前にPeatixの会員登録が必要となります。
+                </p>
+                <p class="program__note">
+                    ※開催日毎に実施時間・参加費等が異なります。ご注意ください。
+                </p>
+
+                <div class="program__main">
+                    <div class="program__body" id="date-0730">
+                        <ul class="program__anchors program__anchors--0730">
+                            <li class="program__anchor blue">
+                                <a href="#date-0730">07/30 [tue]</a>
+                            </li>
+                            <li class="program__anchor">
+                                <a href="#date-0731">07/31[wed]</a>
+                            </li>
+                            <li class="program__anchor">
+                                <a href="#date-0801">08/01[thu]</a>
+                            </li>
+                        </ul>
+                        <div class="program__contents program-contents-0730">
+                            <div class="program-contents-0730__text-area">
+                                <h3 class="program-contents-0730__title">
+                                    会場：ユーザベースオフィス<span>※参加費：1,000円（ワンドリンク+軽食付）</span>
+                                </h3>
+                                <p class="program-contents-0730__time">18:30 ~ 20:00</p>
+                                <p class="program-contents-0730__lead">
+                                    アカデミアとビジネスは“文理融合”で共創できるのか
+                                </p>
+
+                                <div class="program-contents-0730__btn-area program-btn-area">
+                                    <div class="program-btn btn black">
+                                        <p data-modal="0730-modal" class="js-modal-open">
+                                            <span class="text-wrap">
+                                                <strong class="text01">More Detail</strong>
+                                                <strong class="text02">More Detail</strong>
+                                            </span>
+                                            <span>+</span>
+                                        </p>
+                                    </div>
+
+                                    <!-- <div class="program-btn btn green">
+                                        <a href="https://tw2024-07301830-uzabase.peatix.com" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <span class="text-wrap">
+                                                <strong class="text01">Peatix</strong>
+                                                <strong class="text02">Peatix</strong>
+                                            </span>
+                                            <span>→</span></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <ul class="program-contents-0730__member-area">
+                                <li class="program-contents-0730__member program-member">
+                                    <div class="program-member__image">
+                                        <img src="../img/hongo.jpg" alt="本郷 和人" />
+                                    </div>
+                                    <div class="program-member__content">
+                                        <h4 class="program-member__name">本郷 和人</h4>
+                                        <p class="program-member__text">
+                                            東京大学<br />
+                                            史料編纂所 教授
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="program-contents-0730__member program-member">
+                                    <div class="program-member__image">
+                                        <img src="../img/matsunaga.jpg" alt="松永 行子" />
+                                    </div>
+                                    <div class="program-member__content">
+                                        <h4 class="program-member__name">松永 行子</h4>
+                                        <p class="program-member__text">
+                                            東京大学<br />
+                                            生産技術研究所 教授
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="program-contents-0730__member program-member">
+                                    <div class="program-member__image">
+                                        <img src="../img/kure.jpg" alt="呉 琢磨" />
+                                    </div>
+                                    <div class="program-member__content">
+                                        <h4 class="program-member__name">呉 琢磨</h4>
+                                        <p class="program-member__text">
+                                            NewsPicks Brand Design 編集長
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="program__body" id="date-0731">
+                        <ul class="program__anchors">
+                            <li class="program__anchor">
+                                <a href="#date-0730">07/30 [tue]</a>
+                            </li>
+                            <li class="program__anchor orange">
+                                <a href="#date-0731">07/31[wed]</a>
+                            </li>
+                            <li class="program__anchor">
+                                <a href="#date-0801">08/01[thu]</a>
+                            </li>
+                        </ul>
+                        <div class="program__contents program-contents">
+                            <h3 class="program-contents__title">
+                                会場：GARB Tokyo<span>※参加費：500円（ワンドリンク付）</span>
+                            </h3>
+                            <ul class="program-contents__member-area">
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">18:00 ~ 18:45</p>
+                                        <p class="program-contents__lead">
+                                            デジタルネイティブとカーボンニュートラルの同時実現への挑戦
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0731-01" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-07311800-garb.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0731-01.jpg" alt="江﨑 浩" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">江﨑 浩</h4>
+                                            <p class="program-member__text">
+                                                東京大学 大学院<br />
+                                                情報理工学系研究科 教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">19:15 ~ 20:00</p>
+                                        <p class="program-contents__lead">
+                                            ビジネスは社会課題を解決できるのか<br />
+                                            ー歴史とジェンダーの視点から
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0731-02" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-07311915-garb.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0731-02.jpg" alt="山本 浩司" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">山本 浩司</h4>
+                                            <p class="program-member__text">
+                                                東京大学 大学院<br />
+                                                経済学研究科 准教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="program__contents program-contents">
+                            <h3 class="program-contents__title">
+                                会場：ADRIFT by David Myers<span>※参加費：500円（ワンドリンク付）</span>
+                            </h3>
+                            <ul class="program-contents__member-area">
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">18:00 ~ 18:45</p>
+                                        <p class="program-contents__lead">
+                                            革新的新製品に対する消費者の製品評価・需要可能性を高めるためには？<br />
+                                            ～緑の珈琲がアリで無色のコーラがダメな理由～
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0731-03" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-07311800-adrift.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0731-03.jpg" alt="阿部 誠" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">阿部 誠</h4>
+                                            <p class="program-member__text">
+                                                東京大学大学院<br />
+                                                経済学研究科 教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">19:15 ~ 20:00</p>
+                                        <p class="program-contents__lead">
+                                            多様で包摂的な都市空間デザインのための人流解析とシミュレーション
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0731-04" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-07311915-adrift.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0731-04.jpg" alt="澁谷 遊野" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">澁谷 遊野</h4>
+                                            <p class="program-member__text">
+                                                東京大学大学院<br />
+                                                情報学環 准教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="program__body" id="date-0801">
+                        <ul class="program__anchors">
+                            <li class="program__anchor">
+                                <a href="#date-0730">07/30 [tue]</a>
+                            </li>
+                            <li class="program__anchor">
+                                <a href="#date-0731">07/31[wed]</a>
+                            </li>
+                            <li class="program__anchor pink">
+                                <a href="#date-0801">08/01[thu]</a>
+                            </li>
+                        </ul>
+                        <div class="program__contents program-contents">
+                            <h3 class="program-contents__title">
+                                会場：GARB Tokyo<span>※参加費：500円（ワンドリンク付）</span>
+                            </h3>
+                            <ul class="program-contents__member-area">
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">18:00 ~ 18:45</p>
+                                        <p class="program-contents__lead">
+                                            これからの時代の子育て・保育
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0801-01" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-08011800-garb.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0801-01.jpg" alt="野澤 祥子" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">野澤 祥子</h4>
+                                            <p class="program-member__text">
+                                                東京大学 大学院<br />
+                                                教育学研究科附属発達保育実践政策学センター 准教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">19:15 ~ 20:00</p>
+                                        <p class="program-contents__lead">大むかしの動物の謎</p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0801-02" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-08011915-garb.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0801-02.jpg" alt="平沢 達矢" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">平沢 達矢</h4>
+                                            <p class="program-member__text">
+                                                東京大学 大学院<br />
+                                                理学系研究科 准教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="program__contents program-contents">
+                            <h3 class="program-contents__title">
+                                会場：ADRIFT by David Myers<span>※参加費：500円（ワンドリンク付）</span>
+                            </h3>
+                            <ul class="program-contents__member-area">
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">18:00 ~ 18:45</p>
+                                        <p class="program-contents__lead">
+                                            都市と人の持続可能なまちづくり
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0801-03" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0801-03.jpg" alt="古賀 千絵" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">古賀 千絵</h4>
+                                            <p class="program-member__text">
+                                                東京大学<br />
+                                                先端科学技術研究センター<br />
+                                                共創まちづくり分野 特任助教
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="program-contents__item">
+                                    <div class="program-contents__text-area">
+                                        <p class="program-contents__time">19:15 ~ 20:00</p>
+                                        <p class="program-contents__lead">
+                                            時間展望と創造性：行動データによるハイブリッド・ワークの分析
+                                        </p>
+
+                                        <div class="program-contents__btn-area program-btn-area">
+                                            <div class="program-btn btn black">
+                                                <p data-modal="0801-04" class="js-modal-open">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">More Detail</strong>
+                                                        <strong class="text02">More Detail</strong>
+                                                    </span>
+                                                    <span>+</span>
+                                                </p>
+                                            </div>
+                                            <!-- <div class="program-btn btn green">
+                                                <a href="https://tw2024-08011915-adrift.peatix.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    <span class="text-wrap">
+                                                        <strong class="text01">Peatix</strong>
+                                                        <strong class="text02">Peatix</strong>
+                                                    </span>
+                                                    <span>→</span></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="program-member">
+                                        <div class="program-member__image">
+                                            <img src="../img/0801-04.jpg" alt="稲水 伸行" />
+                                        </div>
+                                        <div class="program-member__content">
+                                            <h4 class="program-member__name">稲水 伸行</h4>
+                                            <p class="program-member__text">
+                                                東京大学 大学院<br />
+                                                経済学研究科 准教授
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 各人物のモーダル -->
+            <!-- modal0730-->
+            <div class="program-modal js-modal" id="0730-modal">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">7/30[Tue] 18:30 ~ 20:00</p>
+                        <p class="program-modal__location">
+                            会場：<span>ユーザベースオフィス</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title program-modal__title--0730">
+                        アカデミアとビジネスは“文理融合”で共創できるのか
+                    </h3>
+                    <p class="program-modal__lead">
+                        昨今、オープンイノベーションや異なる領域におけるコラボレーションが重視され、盛んになってきているアカデミアにおける異分野間連携の現状を提示すると共に、歴史上偉人たちが異なる才能をどうマネジメントしてきたか過去を振り返り、今後のビジネス創造における示唆を示します。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/hongo.jpg" alt="本郷 和人" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">本郷 和人</h4>
+                                <p class="program-modal__info">
+                                    東京大学<br />
+                                    史料編纂所 教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                1960年東京生まれ。東京大学・同大学院で日本中世史を学ぶ。1988年に史料編纂所に入所。<br />
+                                助手・助教授を経て2012年に教授。歴史学の衰退に直面し、先ずは「歴史を好きになってもらう」事を眼目として行動している。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/matsunaga.jpg" alt="松永 行子" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">松永 行子</h4>
+                                <p class="program-modal__info">
+                                    東京大学<br />
+                                    生産技術研究所 教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                専門はバイオエンジニアリング。医学と工学を融合した細胞から臓器を設計・組み立てる組織工学研究を行う。近年、科学とデザイン・アート分野の融合に取り組む。平成30年度文部科学大臣表彰若手科学者賞。Attune「血管の音色」2019（松永研究室,
+                                DLX Design Lab, ベツァルエル美術デザインアカデミー）を発表。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/kure.jpg" alt="呉 琢磨" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">呉 琢磨</h4>
+                                <p class="program-modal__info">
+                                    NewsPicks Brand Design 編集長
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                フリー編集者を経て2015年にNewsPicksの広告事業部立ち上げに参画。2018年よりBrand
+                                Design 編集長に就任。2019年に若者向けタブロイド「HOPE by
+                                NewsPicks」を創刊。2020年に地域経済特化プロジェクト「NewsPicks
+                                Re:gion」を開始。新たなメディアビジネスの開発とともに、都市と地域の経済圏をつなぐ取り組みを行っている。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="program-modal__btn btn green">
+                        <a href="https://tw2024-07301830-uzabase.peatix.com" target="_blank" rel="noopener noreferrer">
+                            <span class="text-wrap">
+                                <strong class="text01">Peatix</strong>
+                                <strong class="text02">Peatix</strong>
+                            </span>
+                            <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- modal0731-01 -->
+            <div class="program-modal js-modal" id="0731-01">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">7/31[Wed] 18:00 ~ 18:45</p>
+                        <p class="program-modal__location">
+                            会場：<span>GARB Tokyo</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title">
+                        デジタルネイティブとカーボンニュートラルの同時実現への挑戦
+                    </h3>
+                    <p class="program-modal__lead">
+                        手段としてのDXを認識し、カーボンニュートラルとスマートオフィスを地方展開を含む働き方改革、さらにグローバルな企業として実現するための具体的事例をその本質とともに議論をします。デジタルネイティブなインフラストラクチャーは、企業施設の物理的構造を抜本的に進化させることになります。各企業の財務構造と就業環境だけではなく、不動産産業の進化も起こりつつあります。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0731-01.jpg" alt="江﨑 浩" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">江﨑 浩</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    情報理工学系研究科 教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                1987年 九州大学修士、(株)東芝 入社。1990年米国ニュージャージ州
+                                ベルコア社、1994年米国ニューヨーク市 コロンビア大学
+                                客員研究員。1998年10月 東京大学 助教授、2005年 東京大学
+                                教授。<br />
+                                WIDEプロジェクト代表、MPLS-JAPAN代表、JPNIC理事長、日本データセンター協会
+                                理事/運営委員会委員長、JNSA会長、IPTV
+                                Forum理事長。工学博士(東京大学)。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-07311800-garb.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal0731-02 -->
+            <div class="program-modal js-modal" id="0731-02">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">7/31[Wed] 19:15 ~ 20:00</p>
+                        <p class="program-modal__location">
+                            会場：<span>GARB Tokyo</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title">
+                        ビジネスは社会課題を解決できるのか<br />
+                        ー歴史とジェンダーの視点から
+                    </h3>
+                    <p class="program-modal__lead">
+                        企業の社会的責任（CSR）やESG投資は比較的新しい考えだと思われがちですが、ヨーロッパの歴史を紐解けば、ビジネスを社会課題の解決に役立てようという考えには少なくとも400年の歴史があることが分かります。ビジネスが社会課題を解決できるとして、具体的にどうすればいいのでしょうか？ジェンダーの観点も交えながら、最新の研究成果について共有し、残された課題について展望を示します。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0731-02.jpg" alt="山本 浩司" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">山本 浩司</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    経済学研究科 准教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                慶應大学法学部を卒業後、ヨーク大学の歴史学研究科にて博士号を取得。ロンドン大学、ケンブリッジ大学などの研究員を経て、2016年より東京大学経済学研究科講師。2018年より現職。研究領域は、企業の社会的責任の歴史、ジェンダーの歴史、西洋経済史。2016年、歴史研究の支援と活性化を目的とした日本全国の大学を繋ぐ研究者組織「歴史家ワークショップ」を立ち上げ代表を務める。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-07311915-garb.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal0731-03 -->
+            <div class="program-modal js-modal" id="0731-03">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">7/31[Wed] 18:00 ~ 18:45</p>
+                        <p class="program-modal__location">
+                            会場：<span>ADRIFT by David Myers</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title adrift">
+                        革新的新製品に対する消費者の製品評価・需要可能性を高めるためには？<br />
+                        ～緑の珈琲がアリで無色のコーラがダメな理由～
+                    </h3>
+                    <p class="program-modal__lead">
+                        革新的なアイデアやイノベーションは、人にすぐ受け入れられることが難しいです。<br />
+                        これを『革新的新製品に対する消費者の製品評価・需要可能性を高めるためにはどうすればよいのか？』というマーケティングの文脈において、行動経済学、消費者心理の観点から紐解いてみます。透明のコーラという実際の失敗事例に基づいて、何が問題だったのかを考えることによって、ビジネスの分野以外でも使える汎用的なアプローチが見えてきます。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0731-03.jpg" alt="阿部 誠" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">阿部 誠</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    経済学研究科 教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                フンボルト大学（ドイツ）、UCLA、イェール大学、ニューサウスウェールズ大学（シドニー）、シンガポール国立大学にて、客員教授、准教授、研究員を歴任。<br />
+                                ノーベル経済学賞受賞者との共著を含め、マーケティング学術雑誌に論文を多数掲載。2003年にJournal
+                                of Marketing
+                                Educationからアジア太平洋大学のマーケティング研究者
+                                第１位に選ばれる。日本マーケティング・サイエンス学会の代表理事、学会誌前編集長。専門は、マーケティング・サイエンス、消費者行動、行動経済学。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-07311800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal0731-04 -->
+            <div class="program-modal js-modal" id="0731-04">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">7/31[Wed] 19:15 ~ 20:00</p>
+                        <p class="program-modal__location">
+                            会場：<span>ADRIFT by David Myers</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title adrift">
+                        多様で包摂的な都市空間デザインのための人流解析とシミュレーション
+                    </h3>
+                    <p class="program-modal__lead">
+                        昨今スマートフォンGPSデータをはじめとする大規模人流データ解析によって、都市空間のダイナミクスを捉えることが可能になってきています。人口流入と多様化が進む都市空間で、より多くの人が豊かな暮らしを享受して安心して暮らすことができるようにするためにはどのようなデザインが求められるのでしょうか。人流解析やシミュレーションを通じて、人々の行動や経験の格差やその要因を明らかにし、シナリオに応じた都市空間の多様性や包摂性の多角的な評価を可能とするシミュレーションモデルの構築に取り組んでいます。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0731-04.jpg" alt="澁谷 遊野" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">澁谷 遊野</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    情報学環 准教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                東京大学大学院学際情報学府博士課程修了（博士・社会情報学）。東京大学大学院情報学環・特任助教、東京大学空間情報科学研究センター・准教授を経て、2024年より東京大学大学院情報学環・准教授。空間情報、社会情報学などを中心に、都市空間・デジタル空間での人々の行動の多様性や異質性、参加に関する研究に従事。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-07311915-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal0801-01 -->
+            <div class="program-modal js-modal" id="0801-01">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">08/01[thu] 18:00 ~ 18:45</p>
+                        <p class="program-modal__location">
+                            会場：<span>GARB Tokyo</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title">これからの時代の子育て・保育</h3>
+                    <p class="program-modal__lead">
+                        社会の変化が大きな時代にどう子育てをすればよいのか、早期教育は必要なのかなど悩まれる方も多いかもしれません。急速な少子化を背景として、こども基本法の制定やこども家庭庁の設立など、子どもをめぐる政策も大きく動いています。こうした中、子育てや保育について、社会の変化に応じて意識変革が求められる部分もあれば、人が育つ・人を育てるという営みとして変わらない本質もあるでしょう。最近、改めて注目されている「非認知」「アタッチメント」の考え方もご紹介し、人が育つ・人を育てる営みとはどのようなものかを検討しつつ、これからの時代の子育て・保育のあり方について考えたいと思います。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0801-01.jpg" alt="野澤 祥子" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">野澤 祥子</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    教育学研究科附属発達保育実践政策学センター 准教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                2013年、東京大学大学院教育学研究科博士課程修了。博士（教育学、東京大学）。東京家政学院大学准教授を経て2016年より現職。内閣府「子ども・子育て会議」委員、厚生労働省「保育所等における保育の質の確保・向上に関する検討会」委員等を歴任。専攻は発達心理学・保育学。子どもの発達とウェルビーイングを支える保育の質や、保育者の専門性の発達について研究している。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-08011800-garb.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal0801-02 -->
+            <div class="program-modal js-modal" id="0801-02">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">08/01[thu] 19:15 ~ 20:00</p>
+                        <p class="program-modal__location">
+                            会場：<span>GARB Tokyo</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title">大むかしの動物の謎</h3>
+                    <p class="program-modal__lead">
+                        5.2億年前に現れた脊椎動物は、その歴史の中で上下に噛み合う顎や鰭、手足など、私たちヒトに見られる解剖学的構造を含む多様な形態を進化させてきました。その中では、恐竜のような、現在の地球上には見られないかたちを持つ動物もたくさん存在していたことが分かっています。そのような化石種をどのようなアプローチで研究するのか？
+                        過去の動物とその進化過程について解明を進めることで何が理解できていくのか？
+                        どんなおもしろい謎が残されているのか？
+                        実際の研究例を紹介しながら、お話していきたいと思います。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0801-02.jpg" alt="平沢 達矢" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">平沢 達矢</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    理学系研究科 准教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                2010年東京大学大学院理学系研究科博士課程修了。博士（理学）。理化学研究所基礎科学特別研究員・生命機能科学研究センター研究員等を経て2020年より現職。専門は古生物学と進化発生学の統合領域。特に脊椎動物の形態進化について、化石の精密解析と胚発生の細胞・遺伝子レベルの解析を駆使して解明を進めている。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-08011915-garb.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal0801-03 -->
+            <div class="program-modal js-modal" id="0801-03">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">08/01[thu] 18:00 ~ 18:45</p>
+                        <p class="program-modal__location">
+                            会場：<span>ADRIFT by David Myers</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title adrift">
+                        都市と人の持続可能なまちづくり
+                    </h3>
+                    <p class="program-modal__lead">
+                        私たちの健康は遺伝的な要因だけでなく、所得や学歴のようなミクロレベルの要因から、住んでいる地域の特徴や経済動向のようなマクロレベルの要因までが複雑に絡み合い影響を受けています。これらの社会的要因を総称して「健康の社会的決定要因（Social
+                        Determinants of Health:
+                        SDH）」と呼びます。環境と健康の関連についてどこまで明らかにされているのか、環境と人の双方が健康な未来の可能性について、社会疫学の視点で話題提供します。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0801-03.jpg" alt="古賀 千絵" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">古賀 千絵</h4>
+                                <p class="program-modal__info">
+                                    東京大学<br />
+                                    先端科学技術研究センター<br />
+                                    共創まちづくり分野 特任助教
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                千葉大学大学院医学薬学府先進予防医学共同専攻修了、博士（医学）。シャリテ医科大学（ベルリン）研究員、千葉大学予防医学センター特任研究員を経て現職。専門は社会疫学で、暴力の社会的決定要因の解明を進めている。現在は、都市とウェルビーイング、暴力、ストレスの関連について研究を展開。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal0801-04 -->
+            <div class="program-modal js-modal" id="0801-04">
+                <button class="program-modal__close js-modal-close">−</button>
+                <div class="program-modal__inner">
+                    <div class="program-modal__meta">
+                        <p class="program-modal__date">08/01[thu] 19:15 ~ 20:00</p>
+                        <p class="program-modal__location">
+                            会場：<span>ADRIFT by David Myers</span>
+                        </p>
+                    </div>
+                    <h3 class="program-modal__title adrift">
+                        時間展望と創造性：行動データによるハイブリッド・ワークの分析
+                    </h3>
+                    <p class="program-modal__lead">
+                        オフィスワークとテレワークを組み合わせたハイブリッドワークが定着する中、クリエイティビティを高めるにはどのような働き方が求められるのでしょうか。本講演では、リアル・オンライン双方におけるワーカーの行動データをもとに、どのような時間と場所の使い方がクリエイティビティにつながるのかについて研究成果を報告します。その上で、これからの時代に求められる時間展望と働き方、さらには組織マネジメントのあり方についても考察します。
+                    </p>
+                    <div class="program-modal__contents">
+                        <div class="program-modal__image">
+                            <img src="../img/0801-04.jpg" alt="稲水 伸行" />
+                        </div>
+                        <div class="program-modal__content">
+                            <div class="program-modal__content-meta">
+                                <h4 class="program-modal__name">稲水 伸行</h4>
+                                <p class="program-modal__info">
+                                    東京大学 大学院<br />
+                                    経済学研究科 准教授
+                                </p>
+                            </div>
+                            <p class="program-modal__text">
+                                2003年東京大学経済学部卒業。2008年
+                                東京大学大学院経済学研究科博士課程単位取得退学。筑波大学ビジネスサイエンス系准教授を経て、2016年より現職。博士（経済学）（東京大学,
+                                2008年）。主な著作：『流動化する組織の意思決定』（東京大学出版会,
+                                第31回 組織学会高宮賞 著作部門 受賞）。
+                            </p>
+                            <div class="program-modal__btn btn green">
+                                <a href="https://tw2024-08011915-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="text-wrap">
+                                        <strong class="text01">Peatix</strong>
+                                        <strong class="text02">Peatix</strong>
+                                    </span>
+                                    <span>→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modalここまで -->
+
+            <!-- modalここまで -->
+        </section>
+    </main>
+
+    <script>
+        footer("../");
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>

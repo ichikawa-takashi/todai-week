@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <meta name="description" content="東大Week @ marunouchi 2025.7.30-7.31 知が躍動するまちへ" />
+    <!-- ogp -->
+    <meta property="og:title" content="東大Week＠Marunouchi 2025" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todaiweek-marunouchi.jp/2025/" />
+    <meta property="og:image" content="../img/ogimage.png" />
+    <meta property="og:site_name" content="東大Week＠Marunouchi" />
+    <meta property="og:description" content="東大Week @ marunouchi 2025.7.30-7.31 知が躍動するまちへ" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/bvz6sgg.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <title>東大Week＠Marunouchi 2025</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function header(rootDir) {
+            $.ajax({
+                url: rootDir + "include/header.html",
+                cache: false,
+                async: false,
+                dataType: "html",
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                },
+            });
+        }
+
+        function footer(rootDir) {
+            $.ajax({
+                url: rootDir + "include/footer.html",
+                cache: false,
+                async: false,
+                dataType: "html",
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                },
+            });
+        }
+    </script>
+
+    <style>
+        .main {
+            margin-top: 157px;
+        }
+
+        h1 {
+            font-size: 40px !important;
+            line-height: calc(40 / 60);
+            letter-spacing: 0em;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 28px !important;
+                line-height: 1.2;
+            }
+        }
+
+        h1 span {
+            color: #199a68;
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        div.youtube {
+            width: 100%;
+            max-width: 880px;
+            margin: 40px auto 0;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sec_wrapper {
+            max-width: 1250px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        header("../");
+    </script>
+
+    <main class="main" id="main">
+        <div class="sec_wrapper">
+            <h1>東大Week@Marunouchi <span>2025</span></h1>
+
+            <div class="youtube">
+                <div class="video">
+                    <!-- YouTube動画URL: 2025年の収録動画URLをここに入力してください -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-orange">
+            <section class="program25" id="program">
+                <div class="program25__overlay js-modal-overlay"></div>
+                <div class="inner program25__inner">
+                    <h2 class="program25__title sec-title" data-ja="プログラム">
+                        Program
+                    </h2>
+                    <p class="program25__lead">
+                        7月30日は3名の登壇者によるクロストークを開催、7月31日は３会場に分かれて単独の登壇者による講演を行います。<br />
+                        お申し込みはイベント管理サービスの「Peatix（要事前登録）」からお願いいたします。
+                    </p>
+                    <p class="program25__note">
+                        ※開催日毎に実施時間等が異なります。ご注意ください。<br />
+                        ※「申し込む」ボタンをクリックするとPeatixの申し込みページに遷移いたします。
+                    </p>
+                </div>
+                <div class="program25__outer">
+                    <div class="program25__side">
+                        <div class="side-text">
+                            <span class="side-text__title">DAY1</span>
+                            <span class="side-text__date">7.30</span>
+                            <span class="side-text__note">[Wed]</span>
+                        </div>
+                    </div>
+                    <div class="event25-info event25-info--blue">
+                        <a href="#venue" class="event25-info__header">
+                            <div class="event25-info__title-icon">
+                                <img src="../img/pin.svg" alt="ピンの画像" />
+                            </div>
+                            <div class="event25-info__title-text">
+                                <h3 class="event25-info__main-title">3×3 Lab Future</h3>
+                                <p class="event25-info__sub-title">大手門タワー・ENEOSビル</p>
+                            </div>
+                        </a>
+
+                        <div class="event25-info__content">
+                            <h4 class="event25-info__headline">
+                                最先端の技術研究に関する社会実装と課題<span>〜量子コンピュータとフュージョンエネルギー〜</span>
+                            </h4>
+                            <p class="event25-info__description">
+                                今後社会に大きなインパクトを与えることが予想される量子コンピュータ、フュージョンエネルギーの両分野において、最先端の研究を進める東京大学教授をお招きし、最先端の技術研究の現在地を提示するとともに、技術の社会実装の可能性とその課題を探り、今後のビジネス創造における示唆を示します。
+                            </p>
+                            <div class="event25-info__button-wrapper btn">
+                                <a href="https://tw2025-0730-33lab.peatix.com" target="_blank" rel="noopener noreferrer" class="event25-info__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                            <div class="event25-info__schedule">
+                                <div class="event25-info__time-slot">
+                                    <div class="event25-info__time-slot-header">
+                                        <time class="event25-info__time" datetime="2025-06-04T18:30">18:30-19:30</time>
+                                        <p class="event25-info__session-title">クロストーク</p>
+                                    </div>
+                                    <div class="event25-info__speakers">
+                                        <div class="event25-info__speaker js-modal-open" data-modal="modal01">
+                                            <div class="event25-info__speaker-image-wrapper">
+                                                <img src="../img/takighchi.png" alt="笑顔の瀧口友里奈氏の写真" loading="lazy"
+                                                    class="event25-info__speaker-image" />
+                                            </div>
+                                            <div class="event25-info__speaker-content">
+                                                <p class="event25-info__speaker-name">瀧口 友里奈</p>
+                                                <p class="event25-info__speaker-role">
+                                                    経済キャスター/<br />東京大学 工学部<br />アドバイザリー・ボード
+                                                    メンバー
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="event25-info__speaker js-modal-open" data-modal="modal02">
+                                            <div class="event25-info__speaker-image-wrapper">
+                                                <img src="../img/furusawa.png" alt="古澤明氏の顔写真" loading="lazy"
+                                                    class="event25-info__speaker-image" />
+                                            </div>
+                                            <div class="event25-info__speaker-content">
+                                                <p class="event25-info__speaker-name">古澤 明</p>
+                                                <p class="event25-info__speaker-role">
+                                                    東京大学 大学院<br />工学系研究科物理工学専攻<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="event25-info__speaker js-modal-open" data-modal="modal03">
+                                            <div class="event25-info__speaker-image-wrapper">
+                                                <img src="../img/ejiri.png" alt="江尻晶氏の顔写真" loading="lazy"
+                                                    class="event25-info__speaker-image" />
+                                            </div>
+                                            <div class="event25-info__speaker-content">
+                                                <p class="event25-info__speaker-name">江尻 晶</p>
+                                                <p class="event25-info__speaker-role">
+                                                    東京大学 大学院<br />新領域創成科学研究科<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="event25-info__time-slot">
+                                    <div class="event25-info__time-slot-header">
+                                        <time class="event25-info__time" datetime="2025-06-04T19:30">19:30-20:00</time>
+                                        <p class="event25-info__session-title">
+                                            ネットワーキング（懇親会）
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-day2">
+                    <div class="event25-day2__head">
+                        <h2 class="event25-day2__head-title">DAY2は3会場同時開催</h2>
+                        <p class="event25-day2__head-lead">
+                            7月31日は3会場同時開催となります。ご希望の会場を選んでお申込みください。各会場の講演は2部構成となります。
+                        </p>
+                        <p class="event25-day2__head-sub-lead">
+                            ※講演毎のお申込みやネットワーキング（懇親会）のみのお申込みはできません。<br />
+                            ※全会場同時間帯の開催となるため、複数会場の申込みはできません。ご希望の会場を1つお選びいただき、1部・2部+ネットワーキング（懇親会）を通して
+                            ご参加をお願いいたします。
+                        </p>
+                    </div>
+                    <div class="event25-day2__outer">
+                        <div class="event25-day2__side">
+                            <div class="side-text">
+                                <span class="side-text__title">DAY2</span>
+                                <span class="side-text__date">7.31</span>
+                                <span class="side-text__note">[Thu]</span>
+                            </div>
+                        </div>
+                        <div class="event25-day2__wrapper">
+                            <div class="event25-day2__list event25-day2__list--yellow">
+                                <a href="#venue" class="event25-day2__header">
+                                    <div class="event25-day2__location-icon" aria-hidden="true">
+                                        <img src="../img/pin.svg" alt="ピンの画像" />
+                                    </div>
+                                    <p class="event25-day2__location-text">
+                                        DMO Tokyo Marunouchi
+                                    </p>
+                                </a>
+                                <div class="event25-day2__contents">
+                                    <div class="event25-day2__intro">
+                                        <p class="event25-day2__title">
+                                            デジタルアーカイブと宇宙物理学から学ぶ「過去と未来」
+                                        </p>
+                                        <p class="event25-day2__description">
+                                            ビッグバンからはじまる宇宙に生命はなぜ生まれたのか。戦争や災害の過去の記憶はどうすれば未来に活かせるのか。全く異なる視点から「過去と未来」の本質に迫ります。
+                                        </p>
+                                        <div class="btn event25-day2__button yellow">
+                                            <a href="https://tw2025-0731-dmo.peatix.com" target="_blank" rel="noopener noreferrer"
+                                                class="event25-modal__apply-button">
+                                                <span class="text-wrap">
+                                                    <strong class="text01">申し込む</strong>
+                                                    <strong class="text02">申し込む</strong>
+                                                </span>
+                                                <span>→</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T18:00">18:30-19:10</time>
+                                        <p class="event25-day2__item-title">
+                                            戦災・災害のデジタルアーカイブ
+                                        </p>
+                                        <p class="event25-day2__item-description">
+                                            広島・長崎原爆、東日本大震災、能登半島地震、さらにウクライナ侵攻・ガザ危機など、戦災・災害の貴重な記憶を未来に継承する
+                                            「デジタルアーカイブ」のデザイン手法、及び地域の人々が主体的にアーカイブを育んでいくためのコミュニティ形成のありかたについて、実演を交えて解説します。
+                                        </p>
+                                        <div class="event25-day2__speaker js-modal-open" data-modal="modal06">
+                                            <div class="event25-day2__speaker-img-wrapper">
+                                                <img src="../img/watanabe.png" alt="講演中の渡邉英徳氏の写真"
+                                                    class="event25-day2__speaker-img" loading="lazy" />
+                                            </div>
+                                            <div class="event25-day2__speaker-info">
+                                                <p class="event25-day2__speaker-name">渡邉 英徳</p>
+                                                <p class="event25-day2__speaker-title">
+                                                    東京大学 大学院<br />情報学環・学際情報学府<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T18:50">19:20-20:00</time>
+                                        <p class="event25-day2__item-title">
+                                            宇宙になぜ、生命があるのか
+                                        </p>
+                                        <p class="event25-day2__item-description">
+                                            地球の歴史上、最初の生命が一体どのように誕生したのかという「生命の起源」問題は、自然科学における最大の謎とも言えます。この講演ではまず、ビッグバンから始まり、銀河が生まれ、恒星が生まれ、惑星が生まれることを現代科学はどこまで理解できたかをお話し、その上で、では原始生命はどのように生まれたのかという謎について、天文学の観点から考察してみたいと思います。
+                                        </p>
+                                        <div class="event25-day2__speaker js-modal-open" data-modal="modal07">
+                                            <div class="event25-day2__speaker-img-wrapper">
+                                                <img src="../img/todani.png" alt="スーツ姿の戸谷友則氏の正面写真"
+                                                    class="event25-day2__speaker-img" loading="lazy" />
+                                            </div>
+                                            <div class="event25-day2__speaker-info">
+                                                <p class="event25-day2__speaker-name">戸谷 友則</p>
+                                                <p class="event25-day2__speaker-title">
+                                                    東京大学 大学院<br />理学系研究科 天文学専攻<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T19:30">20:00-20:30</time>
+                                        <p class="event25-day2__item-title">
+                                            ネットワーキング（懇親会）
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event25-day2__list event25-day2__list--orange">
+                                <a href="#venue" class="event25-day2__header">
+                                    <div class="event25-day2__location-icon" aria-hidden="true">
+                                        <img src="../img/pin.svg" alt="ピンの画像" />
+                                    </div>
+                                    <p class="event25-day2__location-text">
+                                        コンファレンススクエアM+ サクセス
+                                    </p>
+                                </a>
+                                <div class="event25-day2__contents">
+                                    <div class="event25-day2__intro">
+                                        <p class="event25-day2__title">
+                                            脳科学とジェンダー論からみる、多様性の実現と課題
+                                        </p>
+                                        <p class="event25-day2__description">
+                                            多様性をどう受けとめ、社会にどう活かしていくか—。脳科学とジェンダー論という異なる視点から、日常に潜む思い込みや決めつけに気づき、誰もが自分らしく生きることのできる社会のヒントを探ります。
+                                        </p>
+                                        <div class="btn event25-day2__button orange">
+                                            <a href="https://tw2025-0731-success.peatix.com" target="_blank" rel="noopener noreferrer"
+                                                class="event25-modal__apply-button">
+                                                <span class="text-wrap">
+                                                    <strong class="text01">申し込む</strong>
+                                                    <strong class="text02">申し込む</strong>
+                                                </span>
+                                                <span>→</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T18:00">18:30-19:10</time>
+                                        <p class="event25-day2__item-title">
+                                            脳と心の多様性と社会：脳科学から考える社会のあり方
+                                        </p>
+                                        <p class="event25-day2__item-description">
+                                            人間の脳は、どれも同じような形をしているけれど、それぞれ違うしそこから生じる知覚や心も違う。音も光も食べ物も、実はみんなが同じように知覚しているわけではない。人間を性別で二等分するのも解像度が低すぎる。脳と心の多様性はどのように可視化できるのだろうか？社会は誰に合わせて設計されるべきなのだろうか？多様な人を包括できる社会は設計可能なのだろうか？具体例とともに、社会のあり方について議論したいと思います。
+                                        </p>
+                                        <div class="event25-day2__speaker js-modal-open" data-modal="modal04">
+                                            <div class="event25-day2__speaker-img-wrapper">
+                                                <img src="../img/yotsumoto.png" alt="緑の背景で微笑む四本祐子氏の写真"
+                                                    class="event25-day2__speaker-img" loading="lazy" />
+                                            </div>
+                                            <div class="event25-day2__speaker-info">
+                                                <p class="event25-day2__speaker-name">四本 裕子</p>
+                                                <p class="event25-day2__speaker-title">
+                                                    東京大学 大学院<br />総合文化研究科<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T18:50">19:20-20:00</time>
+                                        <p class="event25-day2__item-title">
+                                            「笑って考える仕事のこと、家庭のこと～男の家事でジャンボ宝くじを必ず当てる方法？！～」
+                                        </p>
+                                        <p class="event25-day2__item-description">
+                                            ジェンダーへの誤った理解は、職場や家庭での誤解やトラブルを招くことも。本講義では、無意識の思い込みが私たちの行動や判断に与える影響を見つめ直し、より良い人間関係を築くための視点を学びます。育児経験もある瀬地山教授の実体験や身近な例を通してジェンダーを正しく理解し、日常の言動を見直すきっかけとしましょう。
+                                        </p>
+                                        <div class="event25-day2__speaker js-modal-open" data-modal="modal05">
+                                            <div class="event25-day2__speaker-img-wrapper">
+                                                <img src="../img/sechiyama.png" alt="スーツ姿の瀬地山角氏の正面写真"
+                                                    class="event25-day2__speaker-img" loading="lazy" />
+                                            </div>
+                                            <div class="event25-day2__speaker-info">
+                                                <p class="event25-day2__speaker-name">瀬地山 角</p>
+                                                <p class="event25-day2__speaker-title">
+                                                    東京大学 大学院<br />総合文化研究科<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T19:30">20:00-20:30</time>
+                                        <p class="event25-day2__item-title">
+                                            ネットワーキング（懇親会）
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event25-day2__list event25-day2__list--red">
+                                <a href="#venue" class="event25-day2__header">
+                                    <div class="event25-day2__location-icon" aria-hidden="true">
+                                        <img src="../img/pin.svg" alt="ピンの画像" />
+                                    </div>
+                                    <p class="event25-day2__location-text">Inspired. Lab</p>
+                                </a>
+                                <div class="event25-day2__contents">
+                                    <div class="event25-day2__intro">
+                                        <p class="event25-day2__title">
+                                            倫理とテクノロジーの交差点から考える、未来社会のかたち
+                                        </p>
+                                        <p class="event25-day2__description">
+                                            AIに宿る文化的価値観と、食のあり方を変える培養肉技術。異なる分野から技術革新の最前線と文化的・倫理的なインパクトに焦点を当て、私たちはそれらとどのように向き合うべきかを考えます。
+                                        </p>
+                                        <div class="btn event25-day2__button red">
+                                            <a href="https://tw2025-0731-inspired.peatix.com" target="_blank" rel="noopener noreferrer"
+                                                class="event25-modal__apply-button">
+                                                <span class="text-wrap">
+                                                    <strong class="text01">申し込む</strong>
+                                                    <strong class="text02">申し込む</strong>
+                                                </span>
+                                                <span>→</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T18:00">18:30-19:10</time>
+                                        <p class="event25-day2__item-title">
+                                            AIの中のお国柄：ローカライズの次にくるもの
+                                        </p>
+                                        <p class="event25-day2__item-description">
+                                            ChatGPTやDeepSeekなどの生成系AIを物知り博士や相談に乗ってくれる有能なアシスタントのように使っている人が多いようです。客観的で公正な立場で普遍的な考え方を答えてくれていると思っている節があります。しかし、これらの生成系AIには文化的な価値観が埋め込まれています。世界には多様な価値観がある中で、AI技術を用いた新しいサービスを提供する際に、私たちはローカル文化とどう向き合うべきなのでしょうか。
+                                        </p>
+                                        <div class="event25-day2__speaker js-modal-open" data-modal="modal08">
+                                            <div class="event25-day2__speaker-img-wrapper">
+                                                <img src="../img/itadu.png" alt="黒い服を着た板津木綿子氏の写真"
+                                                    class="event25-day2__speaker-img" loading="lazy" />
+                                            </div>
+                                            <div class="event25-day2__speaker-info">
+                                                <p class="event25-day2__speaker-name">板津 木綿子</p>
+                                                <p class="event25-day2__speaker-title">
+                                                    東京大学 大学院<br />情報学環・学際情報学府<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T18:50">19:20-20:00</time>
+                                        <p class="event25-day2__item-title">培養肉研究の最前線</p>
+                                        <p class="event25-day2__item-description">
+                                            狩猟から畜産へ変化してきたように、今、食肉を得る新たな選択肢として「培養肉」が注目されています。培養肉とは、動物の個体からではなく、細胞を体外で組織培養することによって得られた肉のことで、家畜を肥育するのと比べて地球環境への負荷が低いことや、畜産のように広い土地を必要とせず、厳密な衛生管理が可能などの利点があるため、従来の食肉に替わるものとして期待されています。本講演では、培養肉の意義や重要性、関連する最先端の技術などに関して議論していきたいと思います。
+                                        </p>
+                                        <div class="event25-day2__speaker js-modal-open" data-modal="modal09">
+                                            <div class="event25-day2__speaker-img-wrapper">
+                                                <img src="../img/takeuchi.png" alt="スーツ姿の竹内昌治氏の正面写真"
+                                                    class="event25-day2__speaker-img" loading="lazy" />
+                                            </div>
+                                            <div class="event25-day2__speaker-info">
+                                                <p class="event25-day2__speaker-name">竹内 昌治</p>
+                                                <p class="event25-day2__speaker-title">
+                                                    東京大学 大学院<br />情報理工学系研究科<br />教授
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event25-day2__item">
+                                        <time class="event25-day2__time" datetime="2025-06-25T19:30">20:00-20:30</time>
+                                        <p class="event25-day2__item-title">
+                                            ネットワーキング（懇親会）
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- モーダル -->
+                <div class="event25-modal js-modal" id="modal01">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.30<span>[Wed]</span> 18:30~19:30
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>3×3 Lab Future</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/takighchi.png" alt="笑顔の瀧口友里奈氏のポートレート写真"
+                                    class="event25-modal__speaker-image" loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">瀧口 友里奈</p>
+                                    <p class="event25-modal__speaker-title">
+                                        経済キャスター／<br />
+                                        東京大学 工学部<br />アドバイザリー・ボード メンバー
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    SBI新生銀行社外取締役。テレビ東京「ニュースモーニングサテライト」や日経CNBCのキャスターを務める。“情報の力で社会のイノベーションを加速する”株式会社グローブエイトを設立し、新メディア「アカデミアクロス」を立ち上げアカデミアと社会を繋いでいる。書籍「東大教授が語り合う１０の未来予測」編著。世界経済フォーラムYGLに日本人キャスターとして史上初選出。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal02">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.30<span>[Wed]</span> 18:30~19:30
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>3×3 Lab Future</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/furusawa.png" alt="古澤 明氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">古澤 明</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        工学系研究科物理工学専攻<br />教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    東京大学工学部物理工学科卒業、同大学院工学系研究科物理工学専攻修士課程修了後、日本光学工業株式会社(現株式会社ニコン)入社、2000年より東京大学工学系研究科物理工学専攻助教授(のち准教授)、2007年より工学系研究科物理工学専攻教授。専門分野は量子テレポーテーションと量子コンピューター。2016年秋の紫綬褒章受章。令和
+                                    3(2021)年 4月理化学研究所
+                                    量子コンピュータ研究センター・副センター長
+                                    /光量子計算チーム・チームリーダー就任（兼務）。2024年OptQC株式会社の創業者の1人となり取締役に就任。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal03">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.30<span>[Wed]</span> 18:30~19:30
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>3×3 Lab Future</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/ejiri.png" alt="江尻 晶氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">江尻 晶</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        新領域創成科学研究科 教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    1965年東京都生まれ。1992年東京大学大学院理学系研究科博士課程単位取得退学、博士（理学）、核融合科学研究所助教、東京大学理学系研究科助教を経て、現在、東京大学大学院新領域創成科学研究科複雑理工学専攻教授。主に、プラズマ計測手法、球状トカマクプラズマの研究に従事。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal04">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.31<span>[Thu]</span> 18:30-19:10
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>コンファレンススクエアM+ サクセス</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/yotsumoto.png" alt="四本裕子氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">四本 裕子</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        総合文化研究科 教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    東京大学卒業後、米国ブランダイス大学大学院でPh.D.を取得。ボストン大学およびハーバード大学医学部リサーチフェロー、慶應義塾大学特任准教授、東京大学准教授を経て現職。専門は認知神経科学、知覚心理学。視覚、聴覚、触覚などの脳内情報処理の機序、日常生活での知覚経験の個人差を研究対象としている。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal05">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.31<span>[Thu]</span> 19:20-20:00
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>コンファレンススクエアM+ サクセス</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/sechiyama.png" alt="瀬地山角氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">瀬地山 角</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        総合文化研究科 教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    東京大学教養学部を卒業後、東京大学大学院総合文化研究科博士課程修了・学術博士。北海道大学文学部助手を経て、1994年東京大学助教授、2009年より現職。10年間2人の子供の保育園の送迎を一手に担い、今でも毎日の夕食作りを担当するジェンダー論の研究者。NPO法人の理事として保育所の運営にも参加。抱腹絶倒の講演で日本全国を行脚中。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal06">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.31<span>[Thu]</span> 18:30-19:10
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>DMO Tokyo Marunouchi</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/watanabe.png" alt="渡邉英徳氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">渡邉 英徳</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        情報学環・学際情報学府 教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    1974年生。博士（工学）。専門は情報デザイン、デジタルアーカイブ。「ヒロシマ・アーカイブ」や「ウクライナ衛星画像マップ」など、記憶の継承をテーマにしたデジタルアーカイブを多数制作。著書に「データを紡いで社会につなぐ」「AIとカラー化した写真でよみがえる戦前・戦争」他。日本賞、グッドデザイン賞、日本新聞協会賞など受賞多数。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal07">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.31<span>[Thu]</span> 19:20-20:00
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>DMO Tokyo Marunouchi</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/todani.png" alt="戸谷友則氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">戸谷 友則</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        理学系研究科<br />
+                                        天文学専攻 教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    天文学者、宇宙物理学者として宇宙の成り立ちや起源、進化を研究している。専門は超新星やガンマ線バーストなどの宇宙の爆発現象や、銀河の形成進化、ビッグバン宇宙論など。最近は生命の起源についても関心を持って研究している。理論研究が主だが、すばる望遠鏡など、最新の天文観測データを駆使した研究も行っている。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal08">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.31<span>[Thu]</span> 18:30-19:10
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>Inspired. Lab</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/itadu.png" alt="板津木綿子氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">板津 木綿子</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        情報学環・学際情報学府 教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    津田塾大学英文学科卒業後、フルブライト奨学生として南カリフォルニア大学大学院歴史学科博士課程修了。Ph.D.（歴史学）。東京大学教養学部特任講師、総合文化研究科准教授を経て、2021年より現職。『AIから読み解く社会：権力化する最新技術』（東京大学出版会
+                                    2023）共編者。2024年W20ジャパンデリゲート。専門は、文化史・社会史。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="event25-modal js-modal" id="modal09">
+                    <div class="event25-modal__inner">
+                        <span class="event25-modal__close js-modal-close"></span>
+                        <div class="event25-modal__header">
+                            <p class="event25-modal__date-time">
+                                7.31<span>[Thu]</span> 19:20-20:00
+                            </p>
+                            <p class="event25-modal__venue">
+                                会場：<span>Inspired. Lab</span>
+                            </p>
+                        </div>
+                        <div class="event25-modal__content">
+                            <div class="event25-modal__speaker">
+                                <img src="../img/takeuchi.png" alt="竹内昌治氏のポートレート写真" class="event25-modal__speaker-image"
+                                    loading="lazy" />
+                                <div class="event25-modal__speaker-info">
+                                    <p class="event25-modal__speaker-name">竹内 昌治</p>
+                                    <p class="event25-modal__speaker-title">
+                                        東京大学 大学院<br />
+                                        情報理工学系研究科 <br />教授
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event25-modal__description">
+                                <p>
+                                    2000年東京大学大学院工学系研究科博士課程修了。2001年東京大学生産技術研究所講師、2003年同助教授、2014年同教授、2019年同大学大学院情報理工学系研究科知能機械情報学専攻教授、現在に至る。専門はバイオハイブリッドデバイス、ナノバイオテクノロジー、マイクロ流体デバイス、MEMS、ボトムアップ組織工学。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="event25-modal__cta btn">
+                            <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                rel="noopener noreferrer" class="event25-modal__apply-button">
+                                <span class="text-wrap">
+                                    <strong class="text01">申し込む</strong>
+                                    <strong class="text02">申し込む</strong>
+                                </span>
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <a href="#" class="to-top" id="page-top">
+        <img src="../img/to-top.png" alt="page-top" />
+    </a>
+
+    <script>
+        footer("../");
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/gsap.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>
