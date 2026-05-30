@@ -3973,13 +3973,14 @@ event
   position: relative;
   max-width: 1280px;
   margin-inline: auto;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-left: none;
 }
 @media screen and (max-width: 880px) {
   .program26__outer {
     margin-top: 0.875rem;
     grid-template-columns: 1fr 94%;
+    border-width: 1px;
   }
 }
 
