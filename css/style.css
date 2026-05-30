@@ -4336,6 +4336,16 @@ event
   }
 }
 
+.event26-info__speaker-image {
+  border-radius: 0 56px;
+  border: 1.5px solid #000;
+}
+@media screen and (max-width: 880px) {
+  .event26-info__speaker-image {
+    border-width: 1px;
+  }
+}
+
 .event26-info__speaker-name, .event26-modal__speaker-name, .event26-day2__speaker-name {
   font-size: 18px;
   letter-spacing: 0em;
@@ -4413,7 +4423,7 @@ event
 }
 
 .event26-day2 {
-  overflow: hidden;
+  overflow: clip;
 }
 
 .event26-day2__content {
@@ -4837,6 +4847,16 @@ event
   }
 }
 
+.event26-day2__speaker-img {
+  border-radius: 0 56px;
+  border: 1.5px solid #000;
+}
+@media screen and (max-width: 880px) {
+  .event26-day2__speaker-img {
+    border-width: 1px;
+  }
+}
+
 /*--------------------------------
 モーダル
 --------------------------------*/
@@ -5066,6 +5086,16 @@ event
   }
 }
 
+.event26-modal__speaker-image {
+  border-radius: 0 56px;
+  border: 1.5px solid #000;
+}
+@media screen and (max-width: 880px) {
+  .event26-modal__speaker-image {
+    border-width: 1px;
+  }
+}
+
 .event26-modal__description {
   max-width: 446px;
   width: 100%;
@@ -5089,6 +5119,11 @@ event
   margin-left: auto;
   margin-right: 0;
 }
+@media screen and (max-width: 880px) {
+  .event26-modal__btn {
+    width: 8.75rem;
+  }
+}
 .event26-modal__btn a {
   border-radius: 30px;
   border: 1.5px solid #000;
@@ -5103,6 +5138,12 @@ event
   line-height: 1.5;
   letter-spacing: -0.05em;
   font-weight: 500;
+}
+@media screen and (max-width: 880px) {
+  .event26-modal__btn .event26-modal__apply-button .text01,
+  .event26-modal__btn .event26-modal__apply-button .text02 {
+    font-size: 0.8125rem;
+  }
 }
 
 .event26-modal--green .event26-modal__close {
