@@ -212,7 +212,6 @@ top-text
     background-position: center 103px;
     background-size: min(85vw, rem(908));
     text-align: center;
-
     @include mq('md') {
         padding-top: rem(40);
         padding-bottom: rem(56);
@@ -224,10 +223,22 @@ top-text
 
 .top-text p {
     @include font(22, 230, 0, $medium);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 1.7s ease-in-out, transform 1.7s ease-in-out;
+
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     @include mq("md") {
         @include font(12, 230, 0, $medium);
     }
+}
+
+[data-aos="fade-up"] {
+    transform: translate3d(0, 24px, 0);
 }
 
 // ============================================================

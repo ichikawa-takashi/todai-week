@@ -228,6 +228,16 @@ tl.add('decoStart', '-=0.6'); // 画像が出るまでの時間
     });
 });
 
+// top-text: 少しでもスクロールしてから表示
+const topTextP = document.querySelector('.top-text p');
+if (topTextP) {
+    const revealTopText = () => {
+        topTextP.classList.add('is-visible');
+        window.removeEventListener('scroll', revealTopText);
+    };
+    window.addEventListener('scroll', revealTopText);
+}
+
 const triggers = document.querySelectorAll('.btn p,.btn a,.header__nav-item a,.header__nav-modal-item a');
 
 triggers.forEach(trigger => {
