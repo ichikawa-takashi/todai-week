@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta情報 -->
+    <meta name="description" content="東大Week @ marunouchi 2026.7.28-7.29 知が躍動するまちへ" />
+    <!-- <meta name="keywords" content="" /> -->
+    <!-- ogp -->
+    <meta property="og:title" content="東大Week＠Marunouchi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todaiweek-marunouchi.jp" />
+    <meta property="og:image" content="./img/ogimage.png" />
+    <meta property="og:site_name" content="東大Week＠Marunouchi" />
+    <meta property="og:description" content="東大Week @ marunouchi 2026.7.28-7.29 知が躍動するまちへ" />
+    <!-- ファビコン -->
+    <link rel="icon" href="./img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/ijc5caj.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/bvz6sgg.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css?ver=202406110353" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <title>東大Week＠Marunouchi</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function header(rootDir) {
+            $.ajax({
+                url: rootDir + "include/header.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: "html",
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                },
+            });
+        }
+
+        function footer(rootDir) {
+            $.ajax({
+                url: rootDir + "include/footer.html", // ディレクトリー変更
+                cache: false,
+                async: false,
+                dataType: "html",
+                success: function (html) {
+                    html = html.replace(/\{\$root\}/g, rootDir);
+                    document.write(html);
+                },
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        header("./");
+    </script>
+
+    <!-- ここからメイン -->
+    <main class="main" id="main">
+        <div class="fv">
+            <div class="inner fv__inner">
+                <h1 class="fv__text">
+                    <picture>
+                        <source srcset="./img/2026/fv-text.svg" media="(min-width: 880px)" />
+                        <img src="./img/2026/fv-text-sp.svg" alt="東大Week @ Marunouchi 2026.07.28[Tue] - 29[Wed]" />
+                    </picture>
+                </h1>
+                <p class="fv__lead">
+                    <span><span class="fv__lead-text">知が</span></span>
+                    <span><span class="fv__lead-text">躍動する</span></span>
+                    <span><span class="fv__lead-text">まちへ</span></span>
+                </p>
+                <ul class="fv__deco-list" aria-hidden="true">
+                    <li class="fv__deco fv__deco--01">
+                        <picture>
+                            <source srcset="./img/2026/fv-deco-01-sp.svg" media="(max-width: 880px)" />
+                            <img src="./img/2026/fv-deco-01.svg" alt="" />
+                        </picture>
+                    </li>
+                    <li class="fv__deco fv__deco--02">
+                        <picture>
+                            <source srcset="./img/2026/fv-deco-02-sp.svg" media="(max-width: 880px)" />
+                            <img src="./img/2026/fv-deco-02.svg" alt="" />
+                        </picture>
+                    </li>
+                    <li class="fv__deco fv__deco--03">
+                        <picture>
+                            <source srcset="./img/2026/fv-deco-03-sp.svg" media="(max-width: 880px)" />
+                            <img src="./img/2026/fv-deco-03.svg" alt="" />
+                        </picture>
+                    </li>
+                    <li class="fv__deco fv__deco--04">
+                        <picture>
+                            <source srcset="./img/2026/fv-deco-04-sp.svg" media="(max-width: 880px)" />
+                            <img src="./img/2026/fv-deco-04.svg" alt="" />
+                        </picture>
+                    </li>
+                    <li class="fv__deco fv__deco--05">
+                        <picture>
+                            <source srcset="./img/2026/fv-deco-05-sp.svg" media="(max-width: 880px)" />
+                            <img src="./img/2026/fv-deco-05.svg" alt="" />
+                        </picture>
+                    </li>
+                    <li class="fv__deco fv__deco--06">
+                        <picture>
+                            <source srcset="./img/2026/fv-deco-06-sp.svg" media="(max-width: 880px)" />
+                            <img src="./img/2026/fv-deco-06.svg" alt="" />
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="top-text">
+            <p>
+                今、アクティブに働く人にこそ学びが必要だ。<br />
+                最先端の知があらゆる垣根を越え、<br />
+                キャンパスを飛び出し、<br class="sp" />私たちを刺激しにやってくる。<br />
+                好奇心と志を持って集おう、<br />
+                共に学ぼう、未来をつくろう。
+            </p>
+        </div>
+
+        <div class="photo-ticker" aria-hidden="true">
+            <div class="photo-ticker__track">
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider01.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider02.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider03.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider04.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider05.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider06.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider07.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider08.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider01.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider02.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider03.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider04.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider05.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider06.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider07.jpg" alt="" /></div>
+                <div class="photo-ticker__item"><img src="./img/2026/overview-slider08.jpg" alt="" /></div>
+            </div>
+        </div>
+
+        <div id="overview"></div>
+        <section class="overview">
+            <h2 class="overview__title sec-title" data-ja="開催概要" data-aos="fade" data-aos-duration="1700"
+                data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="center-bottom">
+                Overview</h2>
+            <div class="overview__inner inner" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                data-aos-anchor-placement="center-bottom">
+                <div class="overview__image">
+                    <img src="./img/2026/overview-img.svg" alt="">
+                </div>
+                <div class="overview__contents">
+                    <p class="overview__lead">
+                        東京大学から様々な専門分野の教員を招き、大手町・丸の内・有楽町の会場で講演を行います。講演後には軽食、ドリンク（アルコール含む）もご用意して、講演者と参加者同士のネットワーキング（懇親会）の時間もございます。ぜひお楽しみください。
+                    </p>
+                    <div class="overview__content">
+                        <dl class="overview__content-list">
+                            <dt class="overview__content-list-title">名称：</dt>
+                            <dd class="overview__content-list-discription">
+                                東大Week@Marunouchi
+                            </dd>
+                        </dl>
+                        <dl class="overview__content-list">
+                            <dt class="overview__content-list-title">主催：</dt>
+                            <dd class="overview__content-list-discription">
+                                MEC-UTokyo Lab
+                            </dd>
+                        </dl>
+                        <dl class="overview__content-list">
+                            <dt class="overview__content-list-title">日時：</dt>
+                            <dd class="overview__content-list-discription">
+                                2026年7月28日（火）・7月29日（水）
+                            </dd>
+                        </dl>
+                        <dl class="overview__content-list">
+                            <dt class="overview__content-list-title">申込み：</dt>
+                            <dd class="overview__content-list-discription">
+                                2026年7月3日（金）12:30～受付開始
+                            </dd>
+                        </dl>
+                        <dl class="overview__content-list">
+                            <dt class="overview__content-list-title">参加費：</dt>
+                            <dd class="overview__content-list-discription">
+                                各会場1,000円（軽食・ドリンク含）
+                            </dd>
+                        </dl>
+                        <div class="overview__content-bottom">
+                            <p class="overview__content-note">
+                                ※事前申込制となります。<br />
+                                <!-- 　当日空きがあった場合のみ、会場で当日申込を受け付けます。 -->
+                            </p>
+                            <p class="overview__content-note">
+                                ※日時・会場・登壇者は場合により変更となる可能性がございます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-orange">
+            <!-- programセクション -->
+            <section class="program26" id="program">
+                <div class="program26__overlay js-modal-overlay"></div>
+                <div class="inner program26__inner">
+                    <h2 class="program26__title sec-title" data-ja="プログラム" data-aos="fade" data-aos-duration="1700"
+                        data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="center-bottom">
+                        Program
+                    </h2>
+                    <div class="program26__content-wrapper" data-aos="fade-up" data-aos-duration="900"
+                        data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+                        <p class="program26__lead">
+                            7月28日は研究発表と3名の登壇者によるクロストークを開催、7月29日は３会場に分かれて単独の登壇者による講演を行います。お申し込みはイベント管理サービスの「Peatix（要事前登録）」からお願いいたします。
+                        </p>
+                        <p class="program26__note">
+                            ※開催日毎に実施時間等が異なります。ご注意ください。<br />
+                            ※「申し込む」ボタンをクリックするとPeatixの申し込みページに遷移いたします。
+                        </p>
+                        <div class="program26__outer">
+                            <div class="program26__side">
+                                <div class="side-text">
+                                    <span class="side-text__title">DAY1</span>
+                                    <span class="side-text__date">7.28</span>
+                                    <span class="side-text__note">[Tue]</span>
+                                </div>
+                            </div>
+                            <div class="event26-info event26-info--blue">
+                                <a href="#venue" class="event26-info__header">
+                                    <div class="event26-info__title-icon">
+                                        <img src="./img/pin.svg" alt="ピンの画像" />
+                                    </div>
+                                    <div class="event26-info__title-text">
+                                        <h3 class="event26-info__main-title">3×3 Lab Future</h3>
+                                    </div>
+                                </a>
+
+                                <div class="event26-info__content">
+                                    <h4 class="event26-info__headline">
+                                        （仮）この文章はダミーです。文字の大きさ、量、字間、行間等を確認するｓ
+                                    </h4>
+                                    <p class="event26-info__description">
+                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    </p>
+                                    <div class="event26-info__button-wrapper btn">
+                                        <a href="https://tw2025-0730-33lab.peatix.com" target="_blank"
+                                            rel="noopener noreferrer" class="event26-info__apply-button">
+                                            <span class="text-wrap">
+                                                <strong class="text01">申し込む</strong>
+                                                <strong class="text02">申し込む</strong>
+                                            </span>
+                                            <span>→</span>
+                                        </a>
+                                    </div>
+                                    <div class="event26-info__schedule">
+                                        <div class="event26-info__time-item">
+                                            <time class="event26-info__time"
+                                                datetime="2026-06-04T18:30">18:30-19:00</time>
+                                            <p class="event26-info__session-title">研究発表</p>
+                                        </div>
+                                        <div class="event26-info__time-item">
+                                            <time class="event26-info__time"
+                                                datetime="2026-06-04T19:00">19:00-20:00</time>
+                                            <p class="event26-info__session-title">
+                                                クロストーク
+                                            </p>
+                                        </div>
+                                        <div class="event26-info__time-item">
+                                            <time class="event26-info__time"
+                                                datetime="2026-06-04T20:00">20:00-20:30</time>
+                                            <p class="event26-info__session-title">
+                                                ネットワーキング（懇親会）
+                                            </p>
+                                        </div>
+                                        <div class="event26-info__speakers">
+                                            <div class="event26-info__speaker js-modal-open" data-modal="modal01">
+                                                <div class="event26-info__speaker-image-wrapper">
+                                                    <img src="./img/2026/yokohari.png" alt="笑顔の横張真氏の写真" loading="lazy"
+                                                        class="event26-info__speaker-image" />
+                                                </div>
+                                                <div class="event26-info__speaker-content">
+                                                    <p class="event26-info__speaker-name">横張 真</p>
+                                                    <p class="event26-info__speaker-role">
+                                                        東京大学<br>
+                                                        総括プロジェクト機構<br>
+                                                        特任教授
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="event26-info__speaker js-modal-open" data-modal="modal02">
+                                                <div class="event26-info__speaker-image-wrapper">
+                                                    <img src="./img/2026/matsuda.png" alt="松田陽氏の顔写真" loading="lazy"
+                                                        class="event26-info__speaker-image" />
+                                                </div>
+                                                <div class="event26-info__speaker-content">
+                                                    <p class="event26-info__speaker-name">松田 陽</p>
+                                                    <p class="event26-info__speaker-role">
+                                                        東京大学大学院<br>
+                                                        人文社会研究科<br>
+                                                        准教授
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="event26-info__speaker js-modal-open" data-modal="modal03">
+                                                <div class="event26-info__speaker-image-wrapper">
+                                                    <img src="./img/2026/no-image.jpg" alt="伊藤 達矢の顔写真" loading="lazy"
+                                                        class="event26-info__speaker-image" />
+                                                </div>
+                                                <div class="event26-info__speaker-content">
+                                                    <p class="event26-info__speaker-name">伊藤 達矢</p>
+                                                    <p class="event26-info__speaker-role">
+                                                        東京藝術大学<br>
+                                                        社会連携センター長／教授
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event26-day2">
+                            <div class="program26__outer event26-day2__outer">
+                                <div class="event26-day2__side">
+                                    <div class="side-text">
+                                        <span class="side-text__title">DAY2</span>
+                                        <span class="side-text__date">7.29</span>
+                                        <span class="side-text__note">[Wed]</span>
+                                    </div>
+                                </div>
+                                <div class="event26-day2__content">
+                                    <div class="event26-day2__head">
+                                        <h2 class="event26-day2__head-title">DAY2は3会場同時開催</h2>
+                                        <p class="event26-day2__head-lead">
+                                            7月29日は3会場同時開催となります。ご希望の会場を選んでお申込みください。各会場の講演は2部構成となります。
+                                        </p>
+                                        <p class="event26-day2__head-sub-lead">
+                                            ※講演毎のお申込みやネットワーキング（懇親会）のみのお申込みはできません。<br />
+                                            ※全会場同時間帯の開催となるため、複数会場の申込みはできません。ご希望の会場を1つお選びいただき、1部・2部+ネットワーキング（懇親会）を通して
+                                            ご参加をお願いいたします。
+                                        </p>
+                                    </div>
+                                    <div class="event26-day2__wrapper">
+
+                                        <div class="event26-day2__list event26-day2__list--blue">
+                                            <a href="#venue" class="event26-day2__header">
+                                                <div class="event26-day2__location-icon" aria-hidden="true">
+                                                    <img src="./img/pin.svg" alt="ピンの画像" />
+                                                </div>
+                                                <p class="event26-day2__location-text">
+                                                    3×3 Lab Future
+                                                </p>
+                                            </a>
+                                            <div class="event26-day2__contents">
+                                                <div class="event26-day2__intro">
+                                                    <p class="event26-day2__title">
+                                                        タイトルが入ります
+                                                    </p>
+                                                    <p class="event26-day2__description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="btn event26-day2__button blue">
+                                                        <a href="#" target="_blank" rel="noopener noreferrer"
+                                                            class="event26-modal__apply-button">
+                                                            <span class="text-wrap">
+                                                                <strong class="text01">申し込む</strong>
+                                                                <strong class="text02">申し込む</strong>
+                                                            </span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T18:00">18:30-19:10</time>
+                                                    <p class="event26-day2__item-title">
+                                                        匂いの価値とその可能性
+                                                    </p>
+                                                    <p class="event26-day2__item-description">
+                                                        嗅覚は歴史的に、主観的で動物的な感覚、さらには五感の中で最も不要な感覚として軽視されてきました。しかし実際には、ヒトの全遺伝子約2万のうち約2％が匂いを受容する嗅覚受容体遺伝子であり、その多さは嗅覚の生存上の重要性を示しています。本講演では、「意識の外にある感覚」としての嗅覚が脳や心身に及ぼす影響を紹介し、認知症予防やウェルビーイング向上など、匂いが持つ未来の可能性について議論します。
+                                                    </p>
+                                                    <div class="event26-day2__speaker js-modal-open"
+                                                        data-modal="modal06">
+                                                        <div class="event26-day2__speaker-img-wrapper">
+                                                            <img src="./img/2026/takeuchi.png" alt="竹内 春樹氏の写真"
+                                                                class="event26-day2__speaker-img" loading="lazy" />
+                                                        </div>
+                                                        <div class="event26-day2__speaker-info">
+                                                            <p class="event26-day2__speaker-name">竹内 春樹</p>
+                                                            <p class="event26-day2__speaker-title">
+                                                                東京大学大学院<br>
+                                                                理学系研究科生物科学専攻<br>
+                                                                教授
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T18:50">19:20-20:00</time>
+                                                    <p class="event26-day2__item-title">
+                                                        地図のないところに行きたい<br>
+                                                        ー深海を探査する
+                                                    </p>
+                                                    <p class="event26-day2__item-description">
+                                                        Google
+                                                        Earthを見ると、海の下にも山脈や台地など多様な地形があることがわかります。しかし、この海底のでこぼこの7割は「推定」で実測ではありません。海底の地形は、惑星地球の構造や活動の仕組み、そして歴史を理解するための最も基本的なデータのひとつですが、いまだ正確な地図がない世界が広がっています。何を求めて地図のないところへ行くのか、探査の様子を交えてお話したいと思います。
+                                                    </p>
+                                                    <div class="event26-day2__speaker js-modal-open"
+                                                        data-modal="modal07">
+                                                        <div class="event26-day2__speaker-img-wrapper">
+                                                            <img src="./img/2026/okino.png" alt="講演中の沖野郷子氏の写真"
+                                                                class="event26-day2__speaker-img" loading="lazy" />
+                                                        </div>
+                                                        <div class="event26-day2__speaker-info">
+                                                            <p class="event26-day2__speaker-name">沖野 郷子</p>
+                                                            <p class="event26-day2__speaker-title">
+                                                                東京大学<br>
+                                                                大気海洋研究所<br>
+                                                                教授
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T19:30">20:00-20:30</time>
+                                                    <p class="event26-day2__item-title">
+                                                        ネットワーキング（懇親会）
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event26-day2__list event26-day2__list--green">
+                                            <a href="#venue" class="event26-day2__header">
+                                                <div class="event26-day2__location-icon" aria-hidden="true">
+                                                    <img src="./img/pin.svg" alt="ピンの画像" />
+                                                </div>
+                                                <p class="event26-day2__location-text">
+                                                    DMO Tokyo<br class="pc">
+                                                    Marunouchi
+                                                </p>
+                                            </a>
+                                            <div class="event26-day2__contents">
+                                                <div class="event26-day2__intro">
+                                                    <p class="event26-day2__title">
+                                                        タイトルが入ります
+                                                    </p>
+                                                    <p class="event26-day2__description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="btn event26-day2__button green">
+                                                        <a href="#" target="_blank" rel="noopener noreferrer"
+                                                            class="event26-modal__apply-button">
+                                                            <span class="text-wrap">
+                                                                <strong class="text01">申し込む</strong>
+                                                                <strong class="text02">申し込む</strong>
+                                                            </span>
+                                                            <span>→</span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T18:30">18:30-19:10</time>
+                                                    <p class="event26-day2__item-title">
+                                                        タイトルが入ります
+                                                    </p>
+                                                    <p class="event26-day2__item-description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="event26-day2__speaker js-modal-open"
+                                                        data-modal="modal04">
+                                                        <div class="event26-day2__speaker-img-wrapper">
+                                                            <img src="./img/2026/no-image.jpg" alt="香田 啓貴氏の写真"
+                                                                class="event26-day2__speaker-img" loading="lazy" />
+                                                        </div>
+                                                        <div class="event26-day2__speaker-info">
+                                                            <p class="event26-day2__speaker-name">香田 啓貴</p>
+                                                            <p class="event26-day2__speaker-title">
+                                                                東京大学大学院<br>
+                                                                総合文化研究科<br>
+                                                                准教授
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2026-06-25T19:20">19:20-20:00</time>
+                                                    <p class="event26-day2__item-title">
+                                                        タイトルが入ります
+                                                    </p>
+                                                    <p class="event26-day2__item-description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="event26-day2__speaker js-modal-open"
+                                                        data-modal="modal05">
+                                                        <div class="event26-day2__speaker-img-wrapper">
+                                                            <img src="./img/2026/no-image.jpg" alt=""
+                                                                class="event26-day2__speaker-img" loading="lazy" />
+                                                        </div>
+                                                        <div class="event26-day2__speaker-info">
+                                                            <p class="event26-day2__speaker-name">XXX XXX</p>
+                                                            <p class="event26-day2__speaker-title">
+                                                                XXX XXX XXX<br />XXX XXX XXX
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2026-06-25T20:00">20:00-20:30</time>
+                                                    <p class="event26-day2__item-title">
+                                                        ネットワーキング（懇親会）
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event26-day2__list event26-day2__list--pink">
+                                            <a href="#venue" class="event26-day2__header">
+                                                <div class="event26-day2__location-icon" aria-hidden="true">
+                                                    <img src="./img/pin.svg" alt="ピンの画像" />
+                                                </div>
+                                                <p class="event26-day2__location-text">Inspired. Lab</p>
+                                            </a>
+                                            <div class="event26-day2__contents">
+                                                <div class="event26-day2__intro">
+                                                    <p class="event26-day2__title">
+                                                        タイトルが入ります
+                                                    </p>
+                                                    <p class="event26-day2__description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="btn event26-day2__button pink">
+                                                        <a href="#" target="_blank" rel="noopener noreferrer"
+                                                            class="event26-modal__apply-button">
+                                                            <span class="text-wrap">
+                                                                <strong class="text01">申し込む</strong>
+                                                                <strong class="text02">申し込む</strong>
+                                                            </span>
+                                                            <span>→</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T18:00">18:30-19:10</time>
+                                                    <p class="event26-day2__item-title">
+                                                        タイトルが入ります
+                                                    </p>
+                                                    <p class="event26-day2__item-description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="event26-day2__speaker js-modal-open"
+                                                        data-modal="modal08">
+                                                        <div class="event26-day2__speaker-img-wrapper">
+                                                            <img src="./img/2026/no-image.jpg" alt=""
+                                                                class="event26-day2__speaker-img" loading="lazy" />
+                                                        </div>
+                                                        <div class="event26-day2__speaker-info">
+                                                            <p class="event26-day2__speaker-name">XXX XXX</p>
+                                                            <p class="event26-day2__speaker-title">
+                                                                XXX XXX XXX<br />XXX XXX XXX
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T18:50">19:20-20:00</time>
+                                                    <p class="event26-day2__item-title">タイトルが入ります</p>
+                                                    <p class="event26-day2__item-description">
+                                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。
+                                                    </p>
+                                                    <div class="event26-day2__speaker js-modal-open"
+                                                        data-modal="modal09">
+                                                        <div class="event26-day2__speaker-img-wrapper">
+                                                            <img src="./img/2026/yamanka.png" alt="スーツ姿の山中俊治氏の写真"
+                                                                class="event26-day2__speaker-img" loading="lazy" />
+                                                        </div>
+                                                        <div class="event26-day2__speaker-info">
+                                                            <p class="event26-day2__speaker-name">山中 俊治</p>
+                                                            <p class="event26-day2__speaker-title">
+                                                                デザインエンジニア /<br>
+                                                                東京大学特別教授
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event26-day2__item">
+                                                    <time class="event26-day2__time"
+                                                        datetime="2025-06-25T19:30">20:00-20:30</time>
+                                                    <p class="event26-day2__item-title">
+                                                        ネットワーキング（懇親会）
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- モーダル -->
+                    <div class="event26-modal js-modal" id="modal01">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">3×3 Lab Future<span>東京都千代田区大手町１丁目１−２
+                                            大手門タワー・ENEOSビル 1F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/yokohari.png" alt="笑顔の横張真氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="lazy" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">横張 真</p>
+                                        <p class="event26-modal__speaker-title">
+                                            東京大学<br />
+                                            総括プロジェクト機構<br />特任教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        東京大学大学院新領域創成科学研究科教授、東京大学大学院工学系研究科教授等を経て、2024年より現職。（公社）日本都市計画学会長、（公社）日本造園学会会長、東京オリンピック・パラリンピック組織委員会委員、（公社）都市緑化機構理事長、国土交通省社会資本整備審議会委員等を務める。日本造園学会賞（1994）、東京都功労者表彰（2021）、緑の学術賞（2024）等受賞。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal js-modal" id="modal02">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">3×3 Lab Future<span>東京都千代田区大手町１丁目１−２
+                                            大手門タワー・ENEOSビル 1F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/matsuda.png" alt="松田陽氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">松田 陽</p>
+                                        <p class="event26-modal__speaker-title">
+                                            東京大学大学院<br />
+                                            人文社会研究科<br />准教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        東京大学卒業後、ロンドン大学UCLにてPhD取得。ユネスコ文化遺産部コンサルタント、イーストアングリア大学世界美術・博物館学科レクチャラーを経て、現職。専門は文化資源学。あえてジャンルを限定せず、あらゆる種別の文化財・文化遺産・文化資源を研究対象とすることによって、人間社会にとって過去が何を意味するのかを総合的に考えている。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal js-modal" id="modal03">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">3×3 Lab Future<span>東京都千代田区大手町１丁目１−２
+                                            大手門タワー・ENEOSビル 1F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/no-image.jpg" alt="伊藤達矢氏のポートレート写真" class="event26-modal__speaker-image"
+                                        loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">伊藤 達矢</p>
+                                        <p class="event26-modal__speaker-title">
+                                            東京藝術大学<br />
+                                            社会連携センター長／教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        東京藝術大学大学院芸術学美術教育後期博士課程修了（博士号取得）。ケア×アートをテーマに社会人と藝大生が１年間一緒に学ぶDiversity on the Arts Project（愛称：DOOR）を立ち上げるなど、多様な教育・文化プログラムの企画立案に携わる。現在は「共生社会をつくるアートコミュニケーション共創拠点」（COI-NEXT）のプロジェクトリーダーとして研究機関や企業、自治体等との連携を推進しながら、文化芸術を介したwell-beingの実現に向けた研究と社会実装を行なっている。共著に『ケアとアートの教室』(左右舎)、『美術館と大学と市民がつくるソーシャルデザインプロジェクト』（青幻舎）等。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal event26-modal--green js-modal" id="modal04">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">DMO Tokyo Marunouchi<span>東京都千代田区丸の内３丁目２－３
+                                            丸の内二重橋ビル 6F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/no-image.jpg" alt="香田啓貴氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">香田 啓貴</p>
+                                        <p class="event26-modal__speaker-title">
+                                            東京大学大学院<br />
+                                            総合文化研究科<br />准教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        京都大学理学部卒、同大学院理学研究科生物科学専攻博士課程を就職に伴い中退。同大学霊長類研究所助手、英国セントアンドリューズ大学客員研究員、京都大学霊長類研究所特定准教授などを経て2022年４月より現職。言語の起源や社会や文化など人らしさの進化史について、動物との比較を通じて研究を行っている。近著に『進化と人間行動 第3版』（共著）など。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal event26-modal--green js-modal" id="modal05">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">DMO Tokyo Marunouchi<span>東京都千代田区丸の内３丁目２－３
+                                            丸の内二重橋ビル 6F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/no-image.jpg" alt="瀬地山角氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">XXX XXX</p>
+                                        <p class="event26-modal__speaker-title">
+                                            XXX XXX XXX<br />
+                                            XXX XXX XXX
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal js-modal" id="modal06">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">3×3 Lab Future<span>東京都千代田区大手町１丁目１−２
+                                            大手門タワー・ENEOSビル 1F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/takeuchi.png" alt="竹内春樹氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">竹内 春樹</p>
+                                        <p class="event26-modal__speaker-title">
+                                            東京大学大学院<br />
+                                            理学系研究科生物科学専攻<br />教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        2010年東京大学大学院理学系研究科博士課程修了。2022年より現職。専門は嗅覚に関する神経科学。匂いがすごく好きというわけではない。文部科学大臣表彰若手科学者賞、ウッドデザイン賞、グッドデザイン賞など受賞多数。趣味はサッカーで、東京都一部リーグに所属し、シニア全国大会優勝を目指している。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal js-modal" id="modal07">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">3×3 Lab Future<span>東京都千代田区大手町１丁目１−２
+                                            大手門タワー・ENEOSビル 1F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/okino.png" alt="沖野郷子氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">沖野 郷子</p>
+                                        <p class="event26-modal__speaker-title">
+                                            東京大学<br />
+                                            大気海洋研究所<br />教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        京都大学理学部地球物理学専攻修士課程修了後、海上保安庁水路部（現海洋情報部）で主に日本周辺の海底観測に10年弱従事。博士〔理学〕。東京大学に移籍後、観測研究対象を世界に広げる。研究船や深海探査機を駆使してマッピングを行い、多様な姿を見せる海底がどのように生まれ進化していくかを主なテーマとして研究している。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal event26-modal--pink js-modal" id="modal08">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">Inspired. Lab<span>東京都千代田区大手町１丁目６−１
+                                            大手町ビル 6F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/no-image.jpg" alt="板津木綿子氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">XXX XXX</p>
+                                        <p class="event26-modal__speaker-title">
+                                            XXX XXX XXX<br />
+                                            XXX XXX XXX
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event26-modal event26-modal--pink js-modal" id="modal09">
+                        <div class="event26-modal__inner">
+                            <span class="event26-modal__close js-modal-close"></span>
+                            <div class="event26-modal__header">
+                                <p class="event26-modal__date-time">
+                                    <span class="event26-modal__date-title">DAY1</span>
+                                    <span class="event26-modal__date-date">7.28</span>
+                                    <span class="event26-modal__date-note">[Tue]</span>
+                                </p>
+                                <p class="event26-modal__venue">
+                                    <span class="event26-modal__venue-text">Inspired. Lab<span>東京都千代田区大手町１丁目６−１
+                                            大手町ビル 6F</span></span>
+                                </p>
+                            </div>
+                            <div class="event26-modal__content">
+                                <div class="event26-modal__speaker">
+                                    <img src="./img/2026/yamanka.png" alt="山中俊治氏のポートレート写真"
+                                        class="event26-modal__speaker-image" loading="eager" />
+                                    <div class="event26-modal__speaker-info">
+                                        <p class="event26-modal__speaker-name">山中 俊治</p>
+                                        <p class="event26-modal__speaker-title">
+                                            デザインエンジニア /<br />
+                                            東京大学特別教授
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event26-modal__description">
+                                    <p>
+                                        1957年生まれ。1982年に東京大学工学部卒業、日産自動車デザインセンター勤務。1987年に独立。1994年にリーディング・エッジ・デザインを設立。1991年に東京大学客員助教授、2008年に慶應義塾大学教授を経て、2013年に東京大学教授。2023年から東京大学特別教授。腕時計から家電、家具、鉄道車両に至る幅広い製品をデザインする一方、科学者と共同でロボットビークルや3Dプリンタ製アスリート用義足など先進的なプロトタイプを開発してきた。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn event26-modal__btn">
+                                <a href="https://tw2024-08011800-adrift.peatix.com" target="_blank"
+                                    rel="noopener noreferrer" class="event26-modal__apply-button">
+                                    <span class="text-wrap">
+                                        <strong class="text01">申し込む</strong>
+                                        <strong class="text02">申し込む</strong>
+                                    </span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="venue" id="venue">
+                <div class="inner">
+                    <h2 class="venue__title sec-title" data-ja="会場" data-aos="fade" data-aos-duration="1700"
+                        data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="center-bottom">Venue</h2>
+                    <div class="venue__content" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="venue__map-wrapper">
+                            <div class="venue__map">
+                                <picture class="">
+                                    <source srcset="./img/2026/map.png" media="(min-width: 768px)" />
+                                    <!-- 幅768px以上なら表示 -->
+                                    <img src="./img/2026/map-sp.png" alt="会場の地図" /><!-- 幅767px以下なら表示 -->
+                                </picture>
+                                <!-- ここに上から重ねるaタグを3つ配置する -->
+                                <a class="venue__map-link venue__map-link--01"
+                                    href="https://maps.app.goo.gl/55iC6M6TThR9Le767" target="_blank"
+                                    rel="noopener noreferrer">
+                                </a>
+                                <a class="venue__map-link venue__map-link--02"
+                                    href="https://maps.app.goo.gl/ygPPZwxpC4kij1tv7" target="_blank"
+                                    rel="noopener noreferrer">
+                                </a>
+                                <a class="venue__map-link venue__map-link--03"
+                                    href="https://maps.app.goo.gl/BWBfWfm2uYf17RWw8" target="_blank"
+                                    rel="noopener noreferrer">
+                                </a>
+
+                            </div>
+                        </div>
+                        <ul class="venue__lists">
+                            <li class="venue__list">
+                                <div class="venue__list-date-wrap">
+                                    <div class="venue__list-date-item">
+                                        <span class="venue__list-title">DAY1</span>
+                                        <span class="venue__list-date">7.28</span>
+                                        <span class="venue__list-note">[Tue]</span>
+                                    </div>
+                                    <span>/</span>
+                                    <div class="venue__list-date-item">
+                                        <span class="venue__list-title">DAY2</span>
+                                        <span class="venue__list-date">7.29</span>
+                                        <span class="venue__list-note">[Wed]</span>
+                                    </div>
+                                </div>
+                                <a href="https://maps.app.goo.gl/55iC6M6TThR9Le767" target="_blank"
+                                    rel="noopener noreferrer"><img src="./img/2026/map01.jpg" alt="" /></a>
+                                <p class="venue__list-location">
+                                    <span class="venue__list-location-text">3×3 Lab Future<span>東京都千代田区大手町１丁目１−２
+                                            大手門タワー・ENEOSビル 1F</span></span>
+                                </p>
+                            </li>
+                            <li class="venue__list venue__list--green">
+                                <div class="venue__list-date-item">
+                                    <span class="venue__list-title">DAY2</span>
+                                    <span class="venue__list-date">7.29</span>
+                                    <span class="venue__list-note">[Wed]</span>
+                                </div>
+                                <a href="https://maps.app.goo.gl/ygPPZwxpC4kij1tv7" target="_blank"
+                                    rel="noopener noreferrer"><img src="./img/2026/map02.jpg" alt="" /></a>
+                                <p class="venue__list-location">
+                                    <span class="venue__list-location-text">DMO Tokyo Marunouchi<span>東京都千代田区丸の内３丁目２－３
+                                            丸の内二重橋ビル 6F</span></span>
+                                </p>
+                            </li>
+                            <li class="venue__list venue__list--pink">
+                                <div class="venue__list-date-item">
+                                    <span class="venue__list-title">DAY3</span>
+                                    <span class="venue__list-date">7.29</span>
+                                    <span class="venue__list-note">[Wed]</span>
+                                </div>
+                                <a href="https://maps.app.goo.gl/BWBfWfm2uYf17RWw8" target="_blank"
+                                    rel="noopener noreferrer"><img src="./img/2026/map03.jpg" alt="" /></a>
+                                <p class="venue__list-location">
+                                    <span class="venue__list-location-text">Inspired. Lab<span>東京都千代田区大手町１丁目６−１ 大手町ビル
+                                            6F</span></span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="news" id="news">
+            <div class="inner news__inner">
+                <h2 class="news__title sec-title" data-ja="お知らせ" data-aos="fade" data-aos-duration="1700"
+                    data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="center-bottom">News</h2>
+                <div class="news__body" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                    data-aos-anchor-placement="center-bottom">
+                    <ul class="news__lists">
+                        <li class="news__list">
+                            <time class="news__date" datetime="2025-07-01">2025.7.1 </time>
+                            <p class="news__excerpt">
+                                東大 Week@Marunouchi 2025 年度の開催が決定いたしました！
+                            </p>
+                        </li>
+                        <li class="news__list">
+                            <time class="news__date" datetime="2025-07-01">2025.7.1 </time>
+                            <p class="news__excerpt">
+                                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+                            </p>
+                        </li>
+                        <li class="news__list">
+                            <time class="news__date" datetime="2025-07-01">2025.7.1 </time>
+                            <p class="news__excerpt">
+                                東大 Week@Marunouchi 2025 年度の開催が決定いたしました！
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="inner faq__inner">
+                <h2 class="news__title sec-title" data-ja="よくある質問" data-aos="fade" data-aos-duration="1700"
+                    data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="center-bottom">FAQ</h2>
+
+                <ul class="faq__list faq-list" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                    data-aos-anchor-placement="center-bottom">
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>事前の申込みが必要ですか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>事前申込み制（先着順）です。当日参加は受け付けておりません。ご希望の会場の「申し込む」ボタンをクリック、「Peatix」に進んでいただき、申込み手続きをお願いいたします。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>事前申込みはいつまで受付をしていますか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>各日程の前日12:00まで受付をしております。但し、先着順となりますので定員になり次第、締め切ります。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>参加費はいくらですか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>各会場1,000円です。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>2日目は希望の先生の講演だけ選んで申込み・参加はできますか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>7月31日は全て会場単位のお申込み・ご参加となります。1つの講演を選んでのご参加や複数会場へのご参加はできませんのでご了承ください。<br />
+                                ご希望の会場を1つ選んでお申込みをお願いいたします。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>複数人で参加したいのですが、一度の申込みで複数チケットの購入は可能ですか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>一度にお申込みができるチケットは2枚までです。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>申込みをキャンセルしたいです。
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>参加規約のキャンセル規定をご確認の上、事務局（info@todaiweek-marunouchi.jp）までご連絡ください。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>希望の会場が満席になっています。<br />キャンセル待ちは出来ますか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>キャンセル待ちの受付は行っておりません。キャンセルが発生した場合は、その都度申込み受付を再開いたしますので、お申込みページ（Peatix)にて随時ご確認ください。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>参加申込みに条件はありますか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>18歳以上の方はどなたでもお申込みいただけます
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq-list__item">
+                        <p class="faq-list__item-question js-faq-question">
+                            <span>Q.</span>録音・録画をすることはできますか？
+                        </p>
+                        <div class="faq-list__item-answer">
+                            <p class="faq-list__item-answer-text">
+                                <span>A.</span>会場内における撮影はご遠慮頂いております。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div id="organizer"></div>
+        <div id="partner"></div>
+        <div class="sponser-and-partner" data-aos="fade-up" data-aos-delay="0"
+            data-aos-anchor-placement="center-bottom">
+            <div class="sponser-and-partner__inner inner">
+                <section class="sponser">
+                    <h2 class="sponser__title" data-ja="主催">Organizer</h2>
+                    <ul class="sponser__lists">
+                        <li class="sponser__list">
+                            <a href="https://mect-lab.ducr.u-tokyo.ac.jp/" target="_blank"
+                                rel="noopener noreferrer"><img src="./img/sponser01.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="sponser">
+                    <h2 class="sponser__title" data-ja="協力">Sponsor</h2>
+                    <ul class="sponser__lists">
+                        <li class="sponser__list">
+                            <a href="https://www.u-tokyo.ac.jp/ja/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/sponser02.png" alt="U-Tokyo" /></a>
+                        </li>
+                        <li class="sponser__list">
+                            <a href="https://www.mec.co.jp/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/sponser03.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="partner">
+                    <h2 class="partner__title" data-ja="会場パートナー">Venue Partner</h2>
+                    <ul class="partner__lists">
+                        <li class="partner__list">
+                            <a href="https://www.33lab-future.jp/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/sponser04.png" alt="UZABASE" /></a>
+                        </li>
+                        <li class="partner__list">
+                            <a href="https://tokyo-marunouchi.jp/ja/" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/sponser05.png" alt="UZABASE" /></a>
+                        </li>
+                        <li class="partner__list">
+                            <a href="https://inspiredlab.jp" target="_blank" rel="noopener noreferrer"><img
+                                    src="./img/sponser07.png" alt="UZABASE" /></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <section class="contact" id="contact">
+            <h2 class="contact__title sec-title" data-ja="お問い合わせ" data-aos="fade" data-aos-duration="1700"
+                data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="center-bottom">Contact</h2>
+            <div class="inner contact__inner" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                data-aos-anchor-placement="center-bottom">
+                <p class="contact__lead">
+                    東大Week@Marunouchi事務局<br />メールにてお問い合わせください。
+                </p>
+                <div class="btn contact__btn">
+                    <a href="mailto:info@todaiweek-marunouchi.jp">
+                        <span class="text-wrap">
+                            <strong class="text01">問い合わせる</strong>
+                            <strong class="text02">問い合わせる</strong>
+                        </span>
+                        <span>→</span></a>
+                </div>
+            </div>
+        </section>
+        <section id="archive" class="archive">
+            <div class="inner archive__inner">
+                <h2 class="archive__title sec-title" data-ja="過去の実施内容" data-aos="fade" data-aos-duration="1700"
+                    data-aos-easing="ease-in-out-sine" data-aos-anchor-placement="top-bottom">
+                    Archive
+                </h2>
+                <p class="archive__lead" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                    data-aos-anchor-placement="top-bottom">
+                    過去実施した概要・動画をご覧いただけます。
+                </p>
+                <div class="btn archive__btn" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"
+                    data-aos-anchor-placement="top-bottom">
+                    <a href="./2022/" target="_blank" rel="noopener noreferrer">
+                        <span class="text-wrap">
+                            <strong class="text01">2022年</strong>
+                            <strong class="text02">2022年</strong>
+                        </span>
+                        <span>→</span></a>
+                    <a href="./2023/" target="_blank" rel="noopener noreferrer">
+                        <span class="text-wrap">
+                            <strong class="text01">2023年</strong>
+                            <strong class="text02">2023年</strong>
+                        </span>
+                        <span>→</span></a>
+                    <a href="./2024/" target="_blank" rel="noopener noreferrer">
+                        <span class="text-wrap">
+                            <strong class="text01">2024年</strong>
+                            <strong class="text02">2024年</strong>
+                        </span>
+                        <span>→</span></a>
+                    <a href="./2025/" target="_blank" rel="noopener noreferrer">
+                        <span class="text-wrap">
+                            <strong class="text01">2025年</strong>
+                            <strong class="text02">2025年</strong>
+                        </span>
+                        <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="to-top" id="page-top">
+        <picture>
+            <source media="(min-width: 881px)" srcset="./img/2026/to-top.png">
+            <img src="./img/2026/to-top-sp.png" alt="page-top" />
+        </picture>
+    </a>
+
+    <script>
+        footer("./");
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>
