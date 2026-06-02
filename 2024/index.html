@@ -69,6 +69,10 @@
     </script>
 
     <style>
+        body {
+            background-color: #FFFEF8;
+        }
+
         .news__title {
             font-size: 40px;
             line-height: 1;
@@ -85,7 +89,7 @@
             font-size: 40px !important;
             line-height: calc(40 / 60);
             letter-spacing: 0em;
-            font-family: "Outfit", sans-serif;
+            font-family: "Outfit", "Noto Sans JP", sans-serif;
             font-weight: 500;
             text-align: center;
 
@@ -114,6 +118,24 @@
             max-width: 1250px;
             padding: 0 20px;
             margin: 0 auto;
+        }
+
+        .program__lead {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.8;
+            letter-spacing: 0em;
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width: 580px) {
+            .program__lead {
+                font-size: 14px;
+                line-height: 1.5;
+                letter-spacing: 0em;
+                font-weight: 400;
+                text-align: left;
+            }
         }
     </style>
 </head>

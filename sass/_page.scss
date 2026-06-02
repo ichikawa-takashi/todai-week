@@ -1776,6 +1776,7 @@ contact
     .text01,
     .text02 {
         @include font(18, 150, -5, $medium);
+        font-family: $sans;
 
         @include mq("md") {
             @include font(14, 150, -5, $medium);
