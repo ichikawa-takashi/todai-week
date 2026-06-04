@@ -181,8 +181,8 @@ header
     }
 
     .en {
-        @include font(18, 100, 5, $bold);
-        font-family: $en;
+        @include font(22, 100, 5, $medium);
+        font-family: $futura;
         color: $green;
     }
 
@@ -201,7 +201,7 @@ header
 
     .text01,
     .text02 {
-        @include font(11, 150, 0, $medium);
+        @include font(13, 150, 0, $medium);
         font-family: $sans;
         width: 100%;
     }
@@ -225,7 +225,7 @@ header
 }
 
 .header__nav-modal-wrap .ja {
-    margin-left: rem(-12);
+    // margin-left: rem(-12);
 }
 
 .header__nav-modal-wrap>p span.triangle {
@@ -234,7 +234,7 @@ header
     transition: .3s;
     @include font(11, 150, 0, $medium);
     position: absolute;
-    right: 24%;
+    right: 15%;
     bottom: 22%;
 
     @include mq('xl') {
@@ -254,8 +254,8 @@ header
 .header__nav-modal {
     position: absolute;
     top: 60px;
-    left: 0;
-    transform: scaleY(0);
+    left: 50%;
+    transform: scaleY(0) translateX(-50%);
     max-width: 159px;
     width: 100%;
     background-color: #FDFDFD;
@@ -270,7 +270,7 @@ header
 }
 
 .header__nav-modal-wrap:hover>.header__nav-modal {
-    transform: scaleY(1);
+    transform: scaleY(1) translateX(-50%);
     opacity: 1;
     visibility: visible;
 }
@@ -279,7 +279,7 @@ header
     padding: 8px 14px 4px;
     position: relative;
     display: block;
-    @include font(11, 150, 0, $medium);
+    @include font(13, 150, 0, $medium);
     color: $green;
     transition: 0.3s;
 
@@ -756,9 +756,12 @@ footer.footer-2026 .footer_nav-item--archive-wrap .footer_archive-list {
 
 footer.footer-2026 .footer_nav-item--archive-wrap .footer_archive-list a {
     display: block;
+    width: fit-content;
     color: #fff;
     padding: 3px 0;
     @include font(11, 100, 0);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
 
     @include mq('md') {
         padding: 4.5px 0;
@@ -766,12 +769,19 @@ footer.footer-2026 .footer_nav-item--archive-wrap .footer_archive-list a {
     }
 
     &:hover {
-        border-bottom: 1px solid #bdcccc;
+        border-color: #bdcccc;
     }
 }
 
+footer.footer-2026 ul.footer_flex li a {
+    width: fit-content;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
 footer.footer-2026 ul.footer_flex li a:hover {
-    border-bottom: 1px solid #bdcccc;
+    border-color: #bdcccc;
 }
 
 footer.footer-2026 div.copyright {

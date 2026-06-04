@@ -222,7 +222,7 @@ top-text
 }
 
 .top-text p {
-    @include font(22, 230, 0, $medium);
+    @include font(22, 230, 0, $regular);
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 1.7s ease-in-out, transform 1.7s ease-in-out;
@@ -257,7 +257,7 @@ top-text
     display: flex;
     gap: rem(16);
     width: max-content;
-    animation: ticker-rtl 25s linear infinite;
+    animation: ticker-rtl 40s linear infinite;
 
     @include mq('md') {
         gap: rem(8);
@@ -344,7 +344,7 @@ overviewセクション
 
 .overview__lead {
     // margin-top: 24px;
-    @include font(16, 180, 0, $medium);
+    @include font(16, 180, 0, $regular);
 
     @include mq("md") {
         @include font(13, 160);
@@ -1387,10 +1387,11 @@ newsセクション
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 14px;
-    align-items: flex-start;
-
+    align-items: stretch;
+    
     @include mq("sm") {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        align-items: flex-start;
         gap: rem(8);
         margin-top: 16px;
     }
@@ -1601,15 +1602,15 @@ sponserセクション
     width: 255px;
     border-radius: 3%;
     transition: 0.3s;
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+    }
 
     @include mq("md") {
         width: 144px;
     }
 
-    &:hover {
-        opacity: 0.8;
-        transition: 0.3s;
-    }
 }
 
 .sponser__list a {
@@ -1664,6 +1665,12 @@ sponserセクション
 
     @include mq("md") {
         width: 110px;
+    }
+
+        transition: 0.3s;
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
     }
 }
 
@@ -2184,16 +2191,16 @@ event
 }
 
 .event26-info__headline {
-    @include f(24, null, 0, $medium);
+    @include f(24, null, 0, $regular);
     display: flex;
     align-items: baseline;
     gap: 16px;
 
     span {
-        @include f(20, 29, 0, $medium);
+        @include f(20, 29, 0, $regular);
 
         @include mq("md") {
-            @include font(12, 150, 0, $medium);
+            @include font(12, 150, 0, $regular);
         }
     }
 
@@ -2325,8 +2332,9 @@ event
     aspect-ratio: 180 / 128;
     width: 100%;
     object-fit: cover;
-
+    
     @include mq('md') {
+        border-radius: 0 40px;
         border-width: 1px;
     }
 }
@@ -2612,10 +2620,10 @@ event
 }
 
 .event26-day2__title {
-    @include f(24, null, 0, $medium);
+    @include f(24, null, 0, $regular);
 
     @include mq("md") {
-        @include font(14, 150, 0, $medium);
+        @include font(14, 150, 0, $regular);
     }
 }
 
@@ -2757,6 +2765,7 @@ event
     object-fit: cover;
 
     @include mq('md') {
+        border-radius: 0 40px;
         border-width: 1px;
     }
 }
@@ -2956,6 +2965,7 @@ event
     object-fit: cover;
 
     @include mq('md') {
+        border-radius: 0 40px;
         border-width: 1px;
     }
 }

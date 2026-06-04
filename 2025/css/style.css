@@ -6,6 +6,14 @@ event
 .program25 {
   padding-top: 83px;
 }
+
+.program25 p.exp {
+  color: #FF0000;
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
 @media screen and (max-width: 880px) {
   .program25 {
     padding-top: 40px;
@@ -281,7 +289,7 @@ event
 }
 
 .event25-info__schedule {
-  margin-top: -52px;
+  /* margin-top: -52px; */
 }
 @media screen and (max-width: 880px) {
   .event25-info__schedule {

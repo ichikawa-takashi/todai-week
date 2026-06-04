@@ -138,12 +138,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     $(document).ready(function () {
+        var isSubPage = !$('.fv').length;
+
+        if (isSubPage) {
+            $('.appear').show();
+            $('.pc-header').addClass('header-color');
+        }
+
         $(window).scroll(function () {
-            // var sec02Top = $('.sec02').offset().top;
-            // var window_height = $(window).height();
             var scroll = $(window).scrollTop();
 
-            if (scroll > 900) {
+            if (isSubPage || scroll > 900) {
                 $('.appear').fadeIn(10);
                 $('.pc-header').addClass('header-color');
             } else {
