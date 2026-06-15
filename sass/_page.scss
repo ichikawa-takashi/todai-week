@@ -1981,6 +1981,95 @@ contact
     list-style-type: upper-roman;
 }
 
+/*#################################
+特定商取引法に基づく表示ページ
+#################################*/
+.scta__title {
+    @include font(48, 110, 0, $medium);
+    text-align: center;
+
+    @include mq("sm") {
+        @include font(28, 120);
+    }
+}
+
+.scta__inner {
+    max-width: 1120px;
+}
+
+.scta__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $black;
+    table-layout: fixed;
+    @include font(16, 180, 0, $regular);
+
+    th,
+    td {
+        padding: rem(14) rem(18);
+        border: 1px solid $black;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        width: 30%;
+        background-color: rgba($green, 0.12);
+        font-weight: $medium;
+    }
+
+    a {
+        color: $black;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        overflow-wrap: anywhere;
+        transition: opacity 0.3s ease;
+    }
+
+    @media (hover: hover) {
+        a:hover {
+            opacity: 0.6;
+        }
+    }
+
+    p+p {
+        margin-top: rem(20);
+    }
+
+    @include mq("md") {
+        @include font(14, 170);
+    }
+
+    @include mq("sm") {
+        border: none;
+
+        tr,
+        th,
+        td {
+            display: block;
+            width: 100%;
+        }
+
+        tr {
+            border: 1px solid $black;
+        }
+
+        tr+tr {
+            border-top: none;
+        }
+
+        th,
+        td {
+            border: none;
+            padding: rem(10) rem(12);
+        }
+
+        th {
+            border-bottom: 1px solid $black;
+        }
+    }
+}
+
 /*--------------------------------
 event
 --------------------------------*/
@@ -2132,7 +2221,7 @@ event
             height: rem(57);
             left: rem(-2);
             top: rem(-2);
-            z-index: -1;
+            z-index: 2;
 
             @include mq('md') {
                 background: url(../img/2026/header-bg-blue-sp.svg)no-repeat left center / contain;
@@ -2147,7 +2236,7 @@ event
 
 .event26-info__header {
     color: $white;
-    padding: rem(8) rem(22);
+    padding: rem(8) rem(38);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -2155,7 +2244,7 @@ event
     position: relative;
 
     @include mq("md") {
-        padding: 5px 8px 4px;
+        padding: 5px 16px 4px;
         gap: 4px;
     }
 }
@@ -2169,7 +2258,9 @@ event
     }
 }
 
-.event26-info__title-text {}
+.event26-info__title-text {
+    z-index: 3;
+}
 
 .event26-info__main-title {
     @include font(32, 100, 5, $medium);
@@ -2182,32 +2273,22 @@ event
 
 
 .event26-info__content {
-    padding: 23px 38px;
+    padding: 10px 38px 42px;
     background-color: #fff;
+    position: relative;
 
     @include mq("md") {
-        padding: rem(16) rem(10) rem(16) rem(16);
+        padding: rem(16) rem(10) rem(24) rem(16);
     }
 }
 
 .event26-info__headline {
-    @include f(24, null, 0, $regular);
-    display: flex;
-    align-items: baseline;
-    gap: 16px;
-
-    span {
-        @include f(20, 29, 0, $regular);
-
-        @include mq("md") {
-            @include font(12, 150, 0, $regular);
-        }
-    }
-
+    @include font(24, 150, 0, $medium);
+    margin-top: 20px;
+margin-bottom: 0;
     @include mq("md") {
-        flex-direction: column;
         @include font(14, 150, 0, $medium);
-        gap: 0;
+        margin-top: rem(12);
     }
 }
 
@@ -2222,42 +2303,55 @@ event
 }
 
 .event26-info__schedule {
-    margin-top: rem(-31);
+    margin-top: 12px;
 
     @include mq("md") {
-        margin-top: rem(16);
+        margin-top: rem(12);
     }
 }
 
+.event26-info__session {
+    padding-top: 20px;
+}
+
+.event26-info__session+.event26-info__session {
+    margin-top: 24px;
+
+    @include mq("md") {
+        margin-top: rem(12);
+    }
+}
+
+.event26-info__session--networking {
+    padding-bottom: 0;
+}
 
 .event26-info__time-item {
     display: flex;
     align-items: center;
-    gap: 18px;
-    @include font(18, null, 0, $regular);
+    gap: 16px;
+    @include font(32, 120, 0, $medium);
 
     @include mq("md") {
         gap: rem(8);
-        font-size: rem(13);
+        @include font(15, 130, 0, $medium);
+        align-items: flex-start;
     }
-}
-
-.event26-info__time-item+.event26-info__time-item {
-    margin-top: 4px;
 }
 
 .event26-info__time {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    white-space: nowrap;
 
 }
 
 .event26-info__time::before {
     content: "";
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-color: $blue;
 
     @include mq("md") {
@@ -2266,18 +2360,19 @@ event
     }
 }
 
-.event26-info__session-title {}
+.event26-info__session-title {
+    font: inherit;
+}
 
 .event26-info__speakers {
-    display: flex;
-    align-items: self-start;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-top: 24px;
-    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 26px;
     width: 100%;
 
     @include mq('md') {
+        grid-template-columns: 1fr;
         gap: rem(16);
         margin-top: rem(16);
     }
@@ -2288,6 +2383,7 @@ event
     grid-template-columns: rem(180) 1fr;
     gap: 12px;
     align-items: center;
+    cursor: pointer;
 
     @include mq('md') {
         grid-template-columns: rem(140) 1fr;
@@ -2305,6 +2401,19 @@ event
 .event26-info__speaker-image-wrapper {
     position: relative;
     max-width: 180px;
+}
+
+.event26-info__speaker-label {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    z-index: 1;
+    color: $white;
+    @include font(11, 100, 0, $medium);
+
+    @include mq('md') {
+        font-size: rem(9);
+    }
 }
 
 .event26-info__speaker-image-wrapper::after {
@@ -2359,8 +2468,18 @@ event
 .event26-info__button-wrapper {}
 
 .event26-info__button-wrapper.btn {
-    margin-top: 8px;
+    margin-top: 0;
     text-align: right;
+    min-height: 44px;
+    position: absolute;
+    top: 14px;
+    right: 38px;
+    z-index: 1;
+
+    @include mq('md') {
+        position: static;
+        min-height: 0;
+    }
 
 
     a {
