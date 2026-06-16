@@ -2410,6 +2410,15 @@ margin-bottom: 0;
     z-index: 1;
     color: $white;
     @include font(11, 100, 0, $medium);
+    text-shadow:
+        -1px -1px 0 #000,
+         0   -1px 0 #000,
+         1px -1px 0 #000,
+         1px  0   0 #000,
+         1px  1px 0 #000,
+         0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
 
     @include mq('md') {
         font-size: rem(9);
@@ -2739,10 +2748,10 @@ margin-bottom: 0;
 }
 
 .event26-day2__title {
-    @include f(24, null, 0, $regular);
+    @include f(24, null, 0, $medium);
 
     @include mq("md") {
-        @include font(14, 150, 0, $regular);
+        @include font(14, 150, 0);
     }
 }
 

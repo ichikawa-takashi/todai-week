@@ -3961,6 +3961,7 @@ event
   line-height: 1;
   letter-spacing: 0em;
   font-weight: 500;
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
 }
 @media screen and (max-width: 880px) {
   .event26-info__speaker-label {
@@ -4318,14 +4319,13 @@ event
 .event26-day2__title {
   font-size: 24px;
   letter-spacing: 0em;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media screen and (max-width: 880px) {
   .event26-day2__title {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0em;
-    font-weight: 400;
   }
 }
 
