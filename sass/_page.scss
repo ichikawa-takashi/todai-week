@@ -1247,6 +1247,14 @@ venueセクション
 .venue__list a {
     display: flex;
     margin-top: rem(7);
+
+    img {
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover img {
+        opacity: 0.8;
+    }
 }
 
 .venue__list-image img {
@@ -1868,7 +1876,7 @@ contact
 }
 
 .sub-term {
-    padding-top: 120px;
+    padding-top: 60px;
 }
 
 .sub-term .sec-title {
@@ -1985,11 +1993,13 @@ contact
 特定商取引法に基づく表示ページ
 #################################*/
 .scta__title {
-    @include font(48, 110, 0, $medium);
+    @include font(40, 150, 5, $medium);
+    font-family: $sans;
     text-align: center;
+    color: $black;
 
     @include mq("sm") {
-        @include font(28, 120);
+        @include font(26, 150);
     }
 }
 
@@ -2329,13 +2339,15 @@ margin-bottom: 0;
 .event26-info__time-item {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     gap: 16px;
     @include font(32, 120, 0, $medium);
 
     @include mq("md") {
         gap: rem(8);
         @include font(15, 130, 0, $medium);
-        align-items: flex-start;
+        align-items: center;
     }
 }
 
@@ -2362,6 +2374,17 @@ margin-bottom: 0;
 
 .event26-info__session-title {
     font: inherit;
+}
+
+.event26-info__speaker-inline {
+    font: inherit;
+    font-size: 24px;
+    font-weight: $regular;
+    white-space: nowrap;
+
+    @include mq("md") {
+        font-size: 13px;
+    }
 }
 
 .event26-info__speakers {
@@ -2404,24 +2427,13 @@ margin-bottom: 0;
 }
 
 .event26-info__speaker-label {
-    position: absolute;
-    top: 6px;
-    left: 8px;
-    z-index: 1;
-    color: $white;
-    @include font(11, 100, 0, $medium);
-    text-shadow:
-        -1px -1px 0 #000,
-         0   -1px 0 #000,
-         1px -1px 0 #000,
-         1px  0   0 #000,
-         1px  1px 0 #000,
-         0    1px 0 #000,
-        -1px  1px 0 #000,
-        -1px  0   0 #000;
+    display: block;
+    color: #000;
+    @include font(10, 100, 0, $regular);
+    margin-bottom: rem(6);
 
     @include mq('md') {
-        font-size: rem(9);
+        margin-bottom: rem(4);
     }
 }
 
@@ -2589,6 +2601,7 @@ margin-bottom: 0;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto;
     width: fit-content;
     border-top: 2px solid #000;
 
@@ -2606,7 +2619,7 @@ margin-bottom: 0;
     height: 100%;
     display: grid;
     grid-template-rows: subgrid;
-    grid-row: span 5;
+    grid-row: span 7;
 
     @include mq("md") {
         display: block;
@@ -2727,8 +2740,8 @@ margin-bottom: 0;
 .event26-day2__contents {
     padding: 14px 15px 22px;
     display: grid;
-    // grid-template-rows: subgrid;
-    grid-row: span 4;
+    grid-template-rows: subgrid;
+    grid-row: span 6;
     border-radius: 0 0 15px 15px;
 
     @include mq("md") {
@@ -2738,9 +2751,9 @@ margin-bottom: 0;
 }
 
 .event26-day2__intro {
-    // display: grid;
-    // grid-template-rows: subgrid;
-    // grid-row: span 3;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
 
     @include mq("md") {
         display: block;
@@ -3011,6 +3024,11 @@ margin-bottom: 0;
 .venue__list-location {
     display: flex;
     gap: 12px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 
     &::before {
         content: "";
