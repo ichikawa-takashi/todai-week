@@ -2292,6 +2292,27 @@ event
     }
 }
 
+.event26-info__anniversary-logo {
+    position: absolute;
+    top: -23px;
+    right: 248px;
+    width: 112px;
+    z-index: 1;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    @include mq("md") {
+        top: rem(12);
+        left: rem(40);
+        right: initial;
+        width: rem(56);
+    }
+}
+
 .event26-info__headline {
     @include font(24, 150, 0, $medium);
     margin-top: 20px;
@@ -2334,6 +2355,13 @@ margin-bottom: 0;
 
 .event26-info__session--networking {
     padding-bottom: 0;
+
+    @include mq("md") {
+        .event26-info__time-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 }
 
 .event26-info__time-item {
@@ -2483,6 +2511,16 @@ margin-bottom: 0;
 
     @include mq('md') {
         font-size: rem(10);
+    }
+}
+
+.event26-info__note {
+    font-size: 18px;
+    margin-top: rem(25);
+
+    @include mq('md') {
+        font-size: 12px;
+        margin-top: rem(16);
     }
 }
 
